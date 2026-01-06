@@ -1,0 +1,319 @@
+{
+  "version": "2.0",
+  "description": "Skill registry with real metadata extracted from dataset pvmap and metadata files",
+  "common_output_columns": [
+    "observationAbout",
+    "observationDate",
+    "value",
+    "variableMeasured",
+    "unit",
+    "scalingFactor",
+    "measurementMethod",
+    "observationPeriod"
+  ],
+  "skills": [
+    {
+      "name": "demographics",
+      "description": "Handle datasets related to population statistics, census data, birth rates, death rates, age distributions, gender distributions, race/ethnicity breakdowns, migration patterns, household composition, and demographic indicators across countries and regions.",
+      "path": "demographics",
+      "keywords": [
+        "population", "census", "birth", "death", "mortality", "fertility",
+        "age group", "gender", "sex", "race", "ethnicity", "hispanic",
+        "household", "family", "urban", "rural", "life expectancy", "demographic"
+      ],
+      "input_column_patterns": [
+        "TOT_POP", "TOT_MALE", "TOT_FEMALE",
+        "WA_MALE", "WA_FEMALE", "BA_MALE", "BA_FEMALE",
+        "IA_MALE", "IA_FEMALE", "AA_MALE", "AA_FEMALE",
+        "H_MALE", "H_FEMALE", "NH_MALE", "NH_FEMALE",
+        "NHWA_MALE", "NHWA_FEMALE", "WAC_MALE", "WAC_FEMALE",
+        "TOM_MALE", "TOM_FEMALE", "AGE", "YEAR",
+        "population", "pop_count", "birth_rate", "death_rate"
+      ],
+      "output_variable_patterns": [
+        "Count_Person", "Count_Person_Male", "Count_Person_Female",
+        "Count_Person_WhiteAlone", "Count_Person_BlackOrAfricanAmericanAlone",
+        "Count_Person_AsianAlone", "Count_Person_HispanicOrLatino"
+      ],
+      "measurement_methods": ["CensusPEPSurvey_Race2000Onwards"],
+      "source_patterns": ["census", "pep", "nfhs", "undata"],
+      "countries": ["USA", "India", "Ireland", "Singapore", "South Korea", "New Zealand", "Mongolia", "UAE", "Kenya", "Rwanda", "Ethiopia", "Mexico", "Switzerland", "Global"],
+      "dataset_count": 15
+    },
+    {
+      "name": "economics",
+      "description": "Handle datasets related to economic indicators including GDP, income levels, poverty rates, consumer prices, inflation, commodity prices, interest rates, exchange rates, retail sales, minimum wage, and financial market data.",
+      "path": "economics",
+      "keywords": [
+        "gdp", "gross domestic product", "income", "poverty", "price", "cpi",
+        "consumer price index", "inflation", "commodity", "interest rate",
+        "exchange rate", "currency", "retail sales", "wage", "minimum wage",
+        "economic", "financial"
+      ],
+      "input_column_patterns": [
+        "gdp", "gross_domestic_product", "income", "median_income",
+        "household_income", "per_capita_income", "poverty", "poverty_rate",
+        "below_poverty", "price", "cpi", "ppi", "inflation", "price_index",
+        "commodity", "oil_price", "gold_price", "wheat_price",
+        "interest_rate", "fed_rate", "policy_rate", "yield",
+        "exchange_rate", "currency", "forex", "retail_sales", "sales", "trade",
+        "wage", "minimum_wage", "earnings", "compensation"
+      ],
+      "output_variable_patterns": [
+        "ConsumerPriceIndex", "GrossDomesticProduct", "MedianIncome",
+        "PovertyRate", "InterestRate", "ExchangeRate", "RetailSales", "MinimumWage"
+      ],
+      "metadata_indicators": {
+        "header_rows": 5,
+        "aggregate_duplicate_svobs": "last",
+        "has_number_decimal": true,
+        "has_number_separator": true,
+        "has_scalingFactor": true
+      },
+      "source_patterns": ["bls", "bea", "rbi", "world_bank", "oecd", "bis", "fao", "sidra", "ibge", "saipe"],
+      "countries": ["USA", "Brazil", "India", "Global", "OECD"],
+      "dataset_count": 15
+    },
+    {
+      "name": "employment",
+      "description": "Handle datasets related to employment statistics, labor force participation, unemployment rates, job counts by industry, workforce demographics, occupational data, salary information, and labor market indicators.",
+      "path": "employment",
+      "keywords": [
+        "employment", "unemployment", "labor", "labour", "job", "workforce",
+        "worker", "occupation", "salary", "payroll", "nonfarm", "industry"
+      ],
+      "input_column_patterns": [
+        "CEU0000000001", "CES0000000001", "CEU0500000001", "CES0500000001",
+        "CEU0600000001", "CES0600000001", "CEU1000000001", "CES1000000001",
+        "CES2000000001", "CES3000000001",
+        "employment", "employed", "unemployment", "unemployed",
+        "labor_force", "workforce", "payroll", "nonfarm",
+        "occupation", "industry", "sector", "salary", "earnings"
+      ],
+      "output_variable_patterns": [
+        "Count_Person_Employed", "Count_Person_Employed_TotalNonfarm",
+        "Count_Person_Employed_TotalPrivate", "Count_Person_Employed_GoodsProducing",
+        "Count_Person_Employed_MiningAndLogging", "Count_Person_Employed_Construction",
+        "Count_Person_Employed_Manufacturing"
+      ],
+      "measurement_methods": ["BLSSeasonallyUnadjusted", "BLSSeasonallyAdjusted"],
+      "industry_codes": ["NAICS/000000", "NAICS/21", "NAICS/23", "JOLTS_000000"],
+      "scaling": "#Multiply,1000",
+      "source_patterns": ["bls", "ces", "nces", "ncses"],
+      "countries": ["USA", "South Korea", "Mongolia"],
+      "dataset_count": 7
+    },
+    {
+      "name": "health",
+      "description": "Handle datasets related to public health statistics, disease prevalence, health conditions like asthma and diabetes, health insurance coverage, mortality causes, health surveys (BRFSS, NFHS), and epidemiological indicators.",
+      "path": "health",
+      "keywords": [
+        "health", "disease", "illness", "medical", "hospital", "insurance",
+        "healthcare", "prevalence", "asthma", "diabetes", "chronic", "brfss", "vulnerability"
+      ],
+      "input_column_patterns": [
+        "health", "healthcare", "medical", "disease", "illness", "condition",
+        "diagnosis", "prevalence", "incidence", "insurance", "insured", "uninsured",
+        "coverage", "asthma", "diabetes", "cancer", "heart_disease", "mortality", "death_cause"
+      ],
+      "output_variable_patterns": [
+        "Count_Person_WithAsthma", "Percent_Person_WithAsthma",
+        "SampleSize_Count_Person_WithAsthma", "StdError_Count_Person_WithAsthma",
+        "Count_Person_0To4Years_WithAsthma", "Percent_Person_0To4Years_WithAsthma"
+      ],
+      "age_stratification": ["0To4Years", "5To9Years", "10To14Years", "15To19Years", "20To24Years"],
+      "measurement_indicators": {
+        "unit": "Percent",
+        "has_SampleSize": true,
+        "has_StdError": true
+      },
+      "data_url_patterns": ["cdc.gov/asthma/brfss"],
+      "source_patterns": ["cdc", "nchs", "brfss", "sahie", "nfhs", "nss"],
+      "countries": ["USA", "India", "South Korea", "Mongolia"],
+      "dataset_count": 7
+    },
+    {
+      "name": "education",
+      "description": "Handle datasets related to educational statistics, school enrollment, student demographics, STEM degrees, bachelor's/master's/doctorate degrees by field, teacher data, HBCU enrollment, and civil rights education data.",
+      "path": "education",
+      "keywords": [
+        "education", "school", "student", "enrollment", "degree", "graduation",
+        "teacher", "university", "college", "stem", "bachelor", "master", "doctorate", "hbcu"
+      ],
+      "input_column_patterns": [
+        "Total", "Male", "Female", "White", "Black", "Hispanic", "Asian",
+        "Asian/Pacific Islander", "Pacific Islander", "American Indian/Alaska Native",
+        "Two or more races", "Nonresident",
+        "Certificates below the associate's degree level", "Associate's degrees",
+        "Bachelor's degrees", "Master's degrees", "Doctor's degrees"
+      ],
+      "output_variable_patterns": [
+        "Count_Person_BachelorOfScienceOrTechnologyOrEngineeringOrMathematics_EducationalAttainmentCollegeGraduate",
+        "Count_Person_EducationalAttainmentBachelorsDegree",
+        "Count_Person_EducationalAttainmentMastersDegree",
+        "Count_Person_EducationalAttainmentDoctorateDegree"
+      ],
+      "academic_year_mapping": {
+        "2012-13": 2012, "2013-14": 2013, "2014-15": 2014, "2024-25": 2024
+      },
+      "degree_major_property": "Science__Technology__Engineering__Mathematics",
+      "educational_attainment_levels": ["CollegeGraduate", "BachelorsDegree", "MastersDegree", "DoctorateDegree"],
+      "stratification_dimensions": ["gender", "race", "ethnicity", "bachelorsDegreeMajor"],
+      "source_patterns": ["nces", "ncses", "crdc", "oecd", "hbcu"],
+      "countries": ["USA", "South Korea", "Mongolia", "Global", "OECD"],
+      "dataset_count": 11
+    },
+    {
+      "name": "crime_safety",
+      "description": "Handle datasets related to crime statistics from FBI Crime Data Explorer, traffic crash fatalities from NHTSA FARS, criminal offenses by type, arrests, and public safety indicators.",
+      "path": "crime_safety",
+      "keywords": [
+        "crime", "criminal", "offense", "arrest", "police", "safety",
+        "accident", "crash", "fatality", "homicide", "theft", "robbery", "assault", "traffic"
+      ],
+      "input_column_patterns": [
+        "StateName", "CityName", "ViolentCrime", "MurderAndNonNegligentManslaughter",
+        "ForcibleRape", "Robbery", "AggravatedAssault", "PropertyCrime",
+        "Burglary", "LarcenyTheft", "MotorVehicleTheft", "Arson",
+        "STATE", "STATENAME", "ST_CASE", "COUNTY", "COUNTYNAME", "CITY", "CITYNAME",
+        "PEDS", "PERNOTMVIT", "VE_TOTAL", "VE_FORMS", "PVH_INVL", "PERSONS", "PERMVIT",
+        "FATALS", "YEAR", "MONTH", "DAY", "HOUR", "TWAY_ID", "ROUTE", "RUR_URB",
+        "LGT_COND", "WEATHER", "HARM_EV"
+      ],
+      "output_variable_patterns": [
+        "Count_CriminalActivities_ViolentCrime", "Count_CriminalActivities_MurderAndNonNegligentManslaughter",
+        "Count_CriminalActivities_Robbery", "Count_CriminalActivities_AggravatedAssault",
+        "Count_CriminalActivities_PropertyCrime", "Count_CriminalActivities_Burglary",
+        "Count_CriminalActivities_LarcenyTheft", "Count_CriminalActivities_MotorVehicleTheft",
+        "Count_Person_InvolvedInCrash", "Count_Person_InvolvedInCrash_NotMotorVehicleOccupant",
+        "Count_MortalityEvent_VehicleCrashIncident", "Count_VehicleCrashIncident"
+      ],
+      "crime_type_property": [
+        "ViolentCrime", "MurderAndNonNegligentManslaughter", "ForcibleRape",
+        "Robbery", "AggravatedAssault", "PropertyCrime", "Burglary",
+        "LarcenyTheft", "MotorVehicleTheft", "Arson"
+      ],
+      "fars_properties": {
+        "populationType": ["MortalityEvent", "Person", "VehicleCrashIncident"],
+        "causeOfDeath": "VehicleCrashIncident",
+        "vehicleOccupantType": "NotMotorVehicleOccupant",
+        "roadType": ["InterstateRoad", "StateRoute", "CountyRoad", "LocalStreet"]
+      },
+      "source_patterns": ["fbi", "ucr", "fars", "nhtsa"],
+      "countries": ["USA"],
+      "dataset_count": 2
+    },
+    {
+      "name": "environment",
+      "description": "Handle datasets related to environmental data including Brazil wildfire events from INPE, FEMA flood insurance claims, OECD wastewater treatment, and sustainability financial incentives.",
+      "path": "environment",
+      "keywords": [
+        "environment", "fire", "wildfire", "flood", "disaster", "climate",
+        "forest", "pollution", "waste", "sustainability", "emission"
+      ],
+      "input_column_patterns": [
+        "Year", "Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro",
+        "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
+        "flood", "claim", "payment", "wastewater", "emission"
+      ],
+      "output_variable_patterns": ["Count_FireEvent"],
+      "month_mapping_portuguese": {
+        "Janeiro": "01", "Fevereiro": "02", "Marco": "03", "Abril": "04",
+        "Maio": "05", "Junho": "06", "Julho": "07", "Agosto": "08",
+        "Setembro": "09", "Outubro": "10", "Novembro": "11", "Dezembro": "12"
+      },
+      "observation_periods": ["P1M", "P1Y"],
+      "aggregation": "#Aggregate,sum",
+      "brazilian_states": [
+        "Acre", "Alagoas", "Amapa", "Amazonas", "Bahia", "Ceara",
+        "Distrito Federal", "Espirito Santo", "Goias", "Maranhao",
+        "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Para",
+        "Paraiba", "Parana", "Pernambuco", "Piaui", "Rio de Janeiro",
+        "Rio Grande do Norte", "Rio Grande do Sul", "Rondonia", "Roraima",
+        "Santa Catarina", "Sao Paulo", "Sergipe", "Tocantins"
+      ],
+      "data_url_patterns": ["terrabrasilis.dpi.inpe.br/queimadas"],
+      "source_patterns": ["inpe", "fema", "oecd", "terrabrasilis"],
+      "countries": ["USA", "Brazil", "Global", "OECD"],
+      "dataset_count": 4
+    },
+    {
+      "name": "social_programs",
+      "description": "Handle datasets related to Brazil government social programs including food basket distribution to specific populations (indigenous, quilombola, fishing, extractive families) and rural development programs.",
+      "path": "social_programs",
+      "keywords": [
+        "social program", "welfare", "assistance", "aid", "benefit",
+        "food distribution", "food basket", "rural development", "beneficiary",
+        "indigenous", "quilombola"
+      ],
+      "input_column_patterns": [
+        "food_basket", "distribution", "beneficiary", "recipient",
+        "family", "assistance", "aid", "program"
+      ],
+      "population_types": [
+        "ExtractiveFamily", "FishingFamily", "IndigenousFamily", "GypsyFamily",
+        "QuilombolaFamily", "RecycledMaterialCollectorFamily", "SettledFamilies", "EmergencyCare"
+      ],
+      "pvmap_file_patterns": [
+        "FoodBasket_ExtractiveFamily_pvmap.csv",
+        "FoodBasket_FishingFamily_pvmap.csv",
+        "FoodBasket_IndigenousFamily_pvmap.csv",
+        "FoodBasket_GypsyFamily_processed_csv.csv",
+        "FoodBasket_RecycledMaterialCollectorFamily_pvmap.csv",
+        "FoodBasket_EmergencyCare_pvmap.csv",
+        "FoodDistributionAct_FoodBasketByPartners_pvmap.csv",
+        "MunicipalFoodBasket_*_pvmap.csv"
+      ],
+      "metadata_characteristics": {
+        "number_decimal": ",",
+        "number_separator": " ",
+        "schemaless": 1
+      },
+      "place_resolution": "Brazil_Places_Resolved.csv",
+      "source_patterns": ["visdata"],
+      "countries": ["Brazil"],
+      "dataset_count": 2
+    },
+    {
+      "name": "infrastructure",
+      "description": "Handle datasets related to internet connectivity and digital access from NTIA Internet Use Survey, including household internet usage, broadband adoption, and digital divide indicators.",
+      "path": "infrastructure",
+      "keywords": [
+        "infrastructure", "internet", "broadband", "connectivity", "digital",
+        "telecommunications", "online", "access", "household"
+      ],
+      "input_column_patterns": [
+        "internetAnywhere", "internetAtHome", "noInternetAtHome",
+        "adultInternetUser", "ispBundle",
+        "householderAge", "householderRace", "householderGender",
+        "householderEducationalAttainment", "householderWorkStatus"
+      ],
+      "output_variable_patterns": [
+        "isInternetUser", "internetUsageLocation", "internetSubscriptionType",
+        "hasComputer", "computerUsageLocation"
+      ],
+      "property_mappings": {
+        "isInternetUser": ["True", "False"],
+        "internetUsageLocation": ["AnyLocation", "Home", "School", "Work"],
+        "internetSubscriptionType": ["InternetBundle"],
+        "hasComputer": ["True", "False"],
+        "computerUsageLocation": ["Home"]
+      },
+      "population_types": ["Household", "Person"],
+      "demographic_stratification": [
+        "householderAge", "householderRace", "householderGender",
+        "householderEducationalAttainment", "householderWorkStatus"
+      ],
+      "armed_forces_status": ["Civilian", "Active-Duty Military"],
+      "survey_dates": [
+        "Nov 1994", "Oct 1997", "Dec 1998", "Aug 2000", "Sep 2001", "Oct 2003",
+        "Oct 2007", "Oct 2009", "Oct 2010", "Jul 2011", "Oct 2012", "Jul 2013",
+        "Jul 2015", "Nov 2017", "Nov 2019", "Nov 2021", "Nov 2023"
+      ],
+      "source_patterns": ["ntia"],
+      "countries": ["USA"],
+      "dataset_count": 1
+    }
+  ]
+}
