@@ -1,0 +1,8 @@
+Node: E:output->E0
+observationAbout: C:output->observationAbout
+value: C:output->value
+measurementMethod: C:output->measurementMethod
+unit: C:output->unit
+variableMeasured: C:output->variableMeasured
+typeOf: dcs:StatVarObservation
+observationDate: 2022

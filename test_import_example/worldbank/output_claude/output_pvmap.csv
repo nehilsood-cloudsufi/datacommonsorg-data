@@ -1,0 +1,4 @@
+key,property1,value1,property2,value2,property3,value3,property4,value4
+country_code,#Format,observationAbout=worldBank/{Data}
+year,observationDate,{Data}
+population,value,{Number},measuredProperty,count,populationType,Person,statType,dcs:measuredValue

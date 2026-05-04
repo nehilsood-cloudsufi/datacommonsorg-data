@@ -1,0 +1,8 @@
+Node: E:output->E0
+observationDate: C:output->observationDate
+observationAbout: C:output->observationAbout
+value: C:output->value
+observationPeriod: C:output->observationPeriod
+typeOf: dcs:StatVarObservation
+variableMeasured: dcid:InterestRate_EconomicActivity_CentralBankPolicyRate
+unit: PercentPerAnnum

@@ -1,0 +1,984 @@
+# Auto generated using command: "/Users/nehilsood/work/datacommonsorg-data/tools/statvar_importer/stat_var_processor.py --input_data=input/SVI_2022_US_county_input.csv --pv_map=output_claude/output_pvmap.csv --config_file=output_claude/output_metadata.csv --generate_statvar_name=True --output_path=final_output/output" on 2026-01-09 13:04:52.631981
+
+Node: dcid:Area_Place
+typeOf: dcid:StatisticalVariable
+name: "Area Place"
+populationType: dcid:Place
+measuredProperty: dcid:area
+statType: dcid:measuredValue
+
+Node: dcid:Count_Household_HousingCostBurden30To100Percent
+typeOf: dcid:StatisticalVariable
+name: "Count Household: Housing Cost Burden Housing Cost Burden 30 To 10 0Percent"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+housingCostBurden: dcid:HousingCostBurden30To100Percent
+
+Node: dcid:Count_Household_MoreThan1OccupantPerRoom
+typeOf: dcid:StatisticalVariable
+name: "Count Household: Occupants Per Room More Than 1Occupant Per Room"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+occupantsPerRoom: dcid:MoreThan1OccupantPerRoom
+
+Node: dcid:Count_Household_NoInternetAccess
+typeOf: dcid:StatisticalVariable
+name: "Count Household: Internet Access No Internet Access"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+internetAccess: dcid:NoInternetAccess
+
+Node: dcid:Count_Household_NoVehicleAvailable
+typeOf: dcid:StatisticalVariable
+name: "Count Household: Vehicles Available No Vehicle Available"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+vehiclesAvailable: dcid:NoVehicleAvailable
+
+Node: dcid:Count_Household_SingleParentHousehold
+typeOf: dcid:StatisticalVariable
+name: "Count Household: Household Type Single Parent Household"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+householdType: dcid:SingleParentHousehold
+
+Node: dcid:Count_HousingUnit_10OrMoreUnitsInStructure
+typeOf: dcid:StatisticalVariable
+name: "Count Housing Unit: Number Of Units In Structure 1 0Or More Units In Structure"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+numberOfUnitsInStructure: dcid:10OrMoreUnitsInStructure
+
+Node: dcid:Count_HousingUnit_MobileHome
+typeOf: dcid:StatisticalVariable
+name: "Count Housing Unit: Number Of Units In Structure Mobile Home"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+numberOfUnitsInStructure: dcid:MobileHome
+
+Node: dcid:Count_Person_BelowPovertyLevelInThePast12Months
+typeOf: dcid:StatisticalVariable
+name: "Count Person: Income Status Below Poverty Level In The Past 12 Months"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+incomeStatus: dcid:BelowPovertyLevelInThePast12Months
+
+Node: dcid:Count_Person_LimitedEnglishSpeaking
+typeOf: dcid:StatisticalVariable
+name: "Count Person: Language Ability Limited English Speaking"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+languageAbility: dcid:LimitedEnglishSpeaking
+
+Node: dcid:Count_Person_Unemployed
+typeOf: dcid:StatisticalVariable
+name: "Count Person: Employment Status Bls_ Unemployed"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+employmentStatus: dcid:BLS_Unemployed
+
+Node: dcid:Count_Person_Upto17Years
+typeOf: dcid:StatisticalVariable
+name: "Count Person: Age Upto 17 Years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Upto17Years
+
+Node: dcid:Count_Person_Years65Onwards
+typeOf: dcid:StatisticalVariable
+name: "Count Person: Age Years 65 Onwards"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: dcid:Years65Onwards
+
+Node: dcid:DaytimePopulation_Count_Person
+typeOf: dcid:StatisticalVariable
+name: "Daytime Population Count Person"
+populationType: dcid:Person
+measuredProperty: dcid:count
+measurementQualifier: dcid:DaytimePopulation
+statType: dcid:measuredValue
+
+Node: dcid:MarginOfError_Count_Household_HousingCostBurden30To100Percent
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Household: Housing Cost Burden Housing Cost Burden 30 To 10 0Percent"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+housingCostBurden: dcid:HousingCostBurden30To100Percent
+
+Node: dcid:MarginOfError_Count_Household_MoreThan1OccupantPerRoom
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Household: Occupants Per Room More Than 1Occupant Per Room"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+occupantsPerRoom: dcid:MoreThan1OccupantPerRoom
+
+Node: dcid:MarginOfError_Count_Household_NoInternetAccess
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Household: Internet Access No Internet Access"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+internetAccess: dcid:NoInternetAccess
+
+Node: dcid:MarginOfError_Count_Household_NoVehicleAvailable
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Household: Vehicles Available No Vehicle Available"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+vehiclesAvailable: dcid:NoVehicleAvailable
+
+Node: dcid:MarginOfError_Count_Household_SingleParentHousehold
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Household: Household Type Single Parent Household"
+populationType: dcid:Household
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+householdType: dcid:SingleParentHousehold
+
+Node: dcid:MarginOfError_Count_HousingUnit
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Housing Unit"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+
+Node: dcid:MarginOfError_Count_HousingUnit_10OrMoreUnitsInStructure
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Housing Unit: Number Of Units In Structure 1 0Or More Units In Structure"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+numberOfUnitsInStructure: dcid:10OrMoreUnitsInStructure
+
+Node: dcid:MarginOfError_Count_HousingUnit_MobileHome
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Housing Unit: Number Of Units In Structure Mobile Home"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+numberOfUnitsInStructure: dcid:MobileHome
+
+Node: dcid:MarginOfError_Count_Person_BelowPovertyLevelInThePast12Months
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Person: Income Status Below Poverty Level In The Past 12 Months"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+incomeStatus: dcid:BelowPovertyLevelInThePast12Months
+
+Node: dcid:MarginOfError_Count_Person_LimitedEnglishSpeaking
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Person: Language Ability Limited English Speaking"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+languageAbility: dcid:LimitedEnglishSpeaking
+
+Node: dcid:MarginOfError_Count_Person_NonWhite
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Person: Race Non White"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+race: dcid:NonWhite
+
+Node: dcid:MarginOfError_Count_Person_Unemployed
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Person: Employment Status Bls_ Unemployed"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+employmentStatus: dcid:BLS_Unemployed
+
+Node: dcid:MarginOfError_Count_Person_Upto17Years
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Person: Age Upto 17 Years"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+age: dcid:Upto17Years
+
+Node: dcid:MarginOfError_Count_Person_Years65Onwards
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Count Person: Age Years 65 Onwards"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:marginOfError
+age: dcid:Years65Onwards
+
+Node: dcid:MarginOfError_Percent_Household_HousingCostBurden30To100Percent
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Household: Housing Cost Burden Housing Cost Burden 30 To 10 0Percent"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+housingCostBurden: dcid:HousingCostBurden30To100Percent
+
+Node: dcid:MarginOfError_Percent_Household_MoreThan1OccupantPerRoom
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Household: Occupants Per Room More Than 1Occupant Per Room"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+occupantsPerRoom: dcid:MoreThan1OccupantPerRoom
+
+Node: dcid:MarginOfError_Percent_Household_NoInternetAccess
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Household: Internet Access No Internet Access"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+internetAccess: dcid:NoInternetAccess
+
+Node: dcid:MarginOfError_Percent_Household_NoVehicleAvailable
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Household: Vehicles Available No Vehicle Available"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+vehiclesAvailable: dcid:NoVehicleAvailable
+
+Node: dcid:MarginOfError_Percent_Household_SingleParentHousehold
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Household: Household Type Single Parent Household"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+householdType: dcid:SingleParentHousehold
+
+Node: dcid:MarginOfError_Percent_HousingUnit_10OrMoreUnitsInStructure
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Housing Unit: Number Of Units In Structure 1 0Or More Units In Structure"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+numberOfUnitsInStructure: dcid:10OrMoreUnitsInStructure
+
+Node: dcid:MarginOfError_Percent_HousingUnit_MobileHome
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Housing Unit: Number Of Units In Structure Mobile Home"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+numberOfUnitsInStructure: dcid:MobileHome
+
+Node: dcid:MarginOfError_Percent_Person_AmericanIndianOrAlaskaNativeAlone
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race American Indian Or Alaska Native Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:AmericanIndianOrAlaskaNativeAlone
+
+Node: dcid:MarginOfError_Percent_Person_AsianAlone
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race Asian Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:AsianAlone
+
+Node: dcid:MarginOfError_Percent_Person_BelowPovertyLevelInThePast12Months
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Income Status Below Poverty Level In The Past 12 Months"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+incomeStatus: dcid:BelowPovertyLevelInThePast12Months
+
+Node: dcid:MarginOfError_Percent_Person_BlackOrAfricanAmericanAlone
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race Black Or African American Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:BlackOrAfricanAmericanAlone
+
+Node: dcid:MarginOfError_Percent_Person_EducationalAttainmentLessThanHighSchoolGraduate
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Educational Attainment Less Than High School Graduate"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+educationalAttainment: dcid:LessThanHighSchoolGraduate
+
+Node: dcid:MarginOfError_Percent_Person_HispanicOrLatino
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race Hispanic Or Latino"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:HispanicOrLatino
+
+Node: dcid:MarginOfError_Percent_Person_LimitedEnglishSpeaking
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Language Ability Limited English Speaking"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+languageAbility: dcid:LimitedEnglishSpeaking
+
+Node: dcid:MarginOfError_Percent_Person_NativeHawaiianOrOtherPacificIslanderAlone
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race Native Hawaiian Or Other Pacific Islander Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:NativeHawaiianOrOtherPacificIslanderAlone
+
+Node: dcid:MarginOfError_Percent_Person_NoHealthInsurance
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Health Insurance No Health Insurance"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+healthInsurance: dcid:NoHealthInsurance
+
+Node: dcid:MarginOfError_Percent_Person_NonWhite
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race Non White"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:NonWhite
+
+Node: dcid:MarginOfError_Percent_Person_ResidesInGroupQuarters
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Residence Type Group Quarters"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+residenceType: dcid:GroupQuarters
+
+Node: dcid:MarginOfError_Percent_Person_SomeOtherRaceAlone
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race Some Other Race Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:SomeOtherRaceAlone
+
+Node: dcid:MarginOfError_Percent_Person_TwoOrMoreRaces
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Race Two Or More Races"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+race: dcid:TwoOrMoreRaces
+
+Node: dcid:MarginOfError_Percent_Person_Unemployed
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Employment Status Bls_ Unemployed"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+employmentStatus: dcid:BLS_Unemployed
+
+Node: dcid:MarginOfError_Percent_Person_Upto17Years
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Age Upto 17 Years"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+age: dcid:Upto17Years
+
+Node: dcid:MarginOfError_Percent_Person_WithDisability
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Disability Status With Disability"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+disabilityStatus: dcid:WithDisability
+
+Node: dcid:MarginOfError_Percent_Person_Years65Onwards
+typeOf: dcid:StatisticalVariable
+name: "Margin Of Error Percent Person: Age Years 65 Onwards"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:marginOfError
+age: dcid:Years65Onwards
+
+Node: dcid:Percent_Household_HousingCostBurden30To100Percent
+typeOf: dcid:StatisticalVariable
+name: "Percent Household: Housing Cost Burden Housing Cost Burden 30 To 10 0Percent"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+housingCostBurden: dcid:HousingCostBurden30To100Percent
+
+Node: dcid:Percent_Household_MoreThan1OccupantPerRoom
+typeOf: dcid:StatisticalVariable
+name: "Percent Household: Occupants Per Room More Than 1Occupant Per Room"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+occupantsPerRoom: dcid:MoreThan1OccupantPerRoom
+
+Node: dcid:Percent_Household_NoInternetAccess
+typeOf: dcid:StatisticalVariable
+name: "Percent Household: Internet Access No Internet Access"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+internetAccess: dcid:NoInternetAccess
+
+Node: dcid:Percent_Household_NoVehicleAvailable
+typeOf: dcid:StatisticalVariable
+name: "Percent Household: Vehicles Available No Vehicle Available"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+vehiclesAvailable: dcid:NoVehicleAvailable
+
+Node: dcid:Percent_Household_SingleParentHousehold
+typeOf: dcid:StatisticalVariable
+name: "Percent Household: Household Type Single Parent Household"
+populationType: dcid:Household
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+householdType: dcid:SingleParentHousehold
+
+Node: dcid:Percent_HousingUnit_10OrMoreUnitsInStructure
+typeOf: dcid:StatisticalVariable
+name: "Percent Housing Unit: Number Of Units In Structure 1 0Or More Units In Structure"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+numberOfUnitsInStructure: dcid:10OrMoreUnitsInStructure
+
+Node: dcid:Percent_HousingUnit_MobileHome
+typeOf: dcid:StatisticalVariable
+name: "Percent Housing Unit: Number Of Units In Structure Mobile Home"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+numberOfUnitsInStructure: dcid:MobileHome
+
+Node: dcid:Percent_Person_AmericanIndianOrAlaskaNativeAlone
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race American Indian Or Alaska Native Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:AmericanIndianOrAlaskaNativeAlone
+
+Node: dcid:Percent_Person_AsianAlone
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race Asian Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:AsianAlone
+
+Node: dcid:Percent_Person_BelowPovertyLevelInThePast12Months
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Income Status Below Poverty Level In The Past 12 Months"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+incomeStatus: dcid:BelowPovertyLevelInThePast12Months
+
+Node: dcid:Percent_Person_BlackOrAfricanAmericanAlone
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race Black Or African American Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:BlackOrAfricanAmericanAlone
+
+Node: dcid:Percent_Person_EducationalAttainmentLessThanHighSchoolGraduate
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Educational Attainment Less Than High School Graduate"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+educationalAttainment: dcid:LessThanHighSchoolGraduate
+
+Node: dcid:Percent_Person_HispanicOrLatino
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race Hispanic Or Latino"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:HispanicOrLatino
+
+Node: dcid:Percent_Person_LimitedEnglishSpeaking
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Language Ability Limited English Speaking"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+languageAbility: dcid:LimitedEnglishSpeaking
+
+Node: dcid:Percent_Person_NativeHawaiianOrOtherPacificIslanderAlone
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race Native Hawaiian Or Other Pacific Islander Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:NativeHawaiianOrOtherPacificIslanderAlone
+
+Node: dcid:Percent_Person_NoHealthInsurance
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Health Insurance No Health Insurance"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+healthInsurance: dcid:NoHealthInsurance
+
+Node: dcid:Percent_Person_NonWhite
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race Non White"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:NonWhite
+
+Node: dcid:Percent_Person_ResidesInGroupQuarters
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Residence Type Group Quarters"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+residenceType: dcid:GroupQuarters
+
+Node: dcid:Percent_Person_SomeOtherRaceAlone
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race Some Other Race Alone"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:SomeOtherRaceAlone
+
+Node: dcid:Percent_Person_TwoOrMoreRaces
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Race Two Or More Races"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+race: dcid:TwoOrMoreRaces
+
+Node: dcid:Percent_Person_Unemployed
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Employment Status Bls_ Unemployed"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+employmentStatus: dcid:BLS_Unemployed
+
+Node: dcid:Percent_Person_Upto17Years
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Age Upto 17 Years"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+age: dcid:Upto17Years
+
+Node: dcid:Percent_Person_WithDisability
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Disability Status With Disability"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+disabilityStatus: dcid:WithDisability
+
+Node: dcid:Percent_Person_Years65Onwards
+typeOf: dcid:StatisticalVariable
+name: "Percent Person: Age Years 65 Onwards"
+populationType: dcid:Person
+measuredProperty: dcid:percent
+statType: dcid:measuredValue
+age: dcid:Years65Onwards
+
+Node: dcid:Percentile_Household_Crowding
+typeOf: dcid:StatisticalVariable
+name: "Percentile Household: Social Vulnerability Indicator Crowding"
+populationType: dcid:Household
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Crowding
+
+Node: dcid:Percentile_Household_HouseholdCharacteristics
+typeOf: dcid:StatisticalVariable
+name: "Percentile Household: Social Vulnerability Theme Household Characteristics"
+populationType: dcid:Household
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:HouseholdCharacteristics
+
+Node: dcid:Percentile_Household_HousingCostBurden
+typeOf: dcid:StatisticalVariable
+name: "Percentile Household: Social Vulnerability Indicator Housing Cost Burden"
+populationType: dcid:Household
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:HousingCostBurden
+
+Node: dcid:Percentile_Household_NoVehicle
+typeOf: dcid:StatisticalVariable
+name: "Percentile Household: Social Vulnerability Indicator No Vehicle"
+populationType: dcid:Household
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:NoVehicle
+
+Node: dcid:Percentile_Household_SingleParentHousehold
+typeOf: dcid:StatisticalVariable
+name: "Percentile Household: Social Vulnerability Indicator Single Parent Household"
+populationType: dcid:Household
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:SingleParentHousehold
+
+Node: dcid:Percentile_HousingUnit_HousingTypeAndTransportation
+typeOf: dcid:StatisticalVariable
+name: "Percentile Housing Unit: Social Vulnerability Theme Housing Type And Transportation"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:HousingTypeAndTransportation
+
+Node: dcid:Percentile_HousingUnit_MobileHomes
+typeOf: dcid:StatisticalVariable
+name: "Percentile Housing Unit: Social Vulnerability Indicator Mobile Homes"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:MobileHomes
+
+Node: dcid:Percentile_HousingUnit_MultiUnitHousing
+typeOf: dcid:StatisticalVariable
+name: "Percentile Housing Unit: Social Vulnerability Indicator Multi Unit Housing"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:MultiUnitHousing
+
+Node: dcid:Percentile_Person_Age17OrYounger
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Age 17 Or Younger"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Age17OrYounger
+
+Node: dcid:Percentile_Person_Age65OrOlder
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Age 65 Or Older"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Age65OrOlder
+
+Node: dcid:Percentile_Person_Disability
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Disability"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Disability
+
+Node: dcid:Percentile_Person_GroupQuarters
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Group Quarters"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:GroupQuarters
+
+Node: dcid:Percentile_Person_LimitedEnglish
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Limited English"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:LimitedEnglish
+
+Node: dcid:Percentile_Person_MinorityStatus
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Minority Status"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:MinorityStatus
+
+Node: dcid:Percentile_Person_MinorityStatusAndLanguage
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Theme Minority Status And Language"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:MinorityStatusAndLanguage
+
+Node: dcid:Percentile_Person_NoHealthInsurance
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator No Health Insurance"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:NoHealthInsurance
+
+Node: dcid:Percentile_Person_NoHighSchoolDiploma
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator No High School Diploma"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:NoHighSchoolDiploma
+
+Node: dcid:Percentile_Person_OverallSVI
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Theme Overall Svi"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:OverallSVI
+
+Node: dcid:Percentile_Person_Poverty150
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Poverty 15 0"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Poverty150
+
+Node: dcid:Percentile_Person_SocioeconomicStatus
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Theme Socioeconomic Status"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:SocioeconomicStatus
+
+Node: dcid:Percentile_Person_Unemployment
+typeOf: dcid:StatisticalVariable
+name: "Percentile Person: Social Vulnerability Indicator Unemployment"
+populationType: dcid:Person
+measuredProperty: dcid:percentile
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Unemployment
+
+Node: dcid:SocialVulnerabilityFlag_Household_Crowding
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Household: Social Vulnerability Indicator Crowding"
+populationType: dcid:Household
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Crowding
+
+Node: dcid:SocialVulnerabilityFlag_Household_HouseholdCharacteristics
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Household: Social Vulnerability Theme Household Characteristics"
+populationType: dcid:Household
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:HouseholdCharacteristics
+
+Node: dcid:SocialVulnerabilityFlag_Household_HousingCostBurden
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Household: Social Vulnerability Indicator Housing Cost Burden"
+populationType: dcid:Household
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:HousingCostBurden
+
+Node: dcid:SocialVulnerabilityFlag_Household_NoVehicle
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Household: Social Vulnerability Indicator No Vehicle"
+populationType: dcid:Household
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:NoVehicle
+
+Node: dcid:SocialVulnerabilityFlag_Household_SingleParentHousehold
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Household: Social Vulnerability Indicator Single Parent Household"
+populationType: dcid:Household
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:SingleParentHousehold
+
+Node: dcid:SocialVulnerabilityFlag_HousingUnit_HousingTypeAndTransportation
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Housing Unit: Social Vulnerability Theme Housing Type And Transportation"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:HousingTypeAndTransportation
+
+Node: dcid:SocialVulnerabilityFlag_HousingUnit_MobileHomes
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Housing Unit: Social Vulnerability Indicator Mobile Homes"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:MobileHomes
+
+Node: dcid:SocialVulnerabilityFlag_HousingUnit_MultiUnitHousing
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Housing Unit: Social Vulnerability Indicator Multi Unit Housing"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:MultiUnitHousing
+
+Node: dcid:SocialVulnerabilityFlag_Person_Age17OrYounger
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Age 17 Or Younger"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Age17OrYounger
+
+Node: dcid:SocialVulnerabilityFlag_Person_Age65OrOlder
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Age 65 Or Older"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Age65OrOlder
+
+Node: dcid:SocialVulnerabilityFlag_Person_Disability
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Disability"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Disability
+
+Node: dcid:SocialVulnerabilityFlag_Person_GroupQuarters
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Group Quarters"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:GroupQuarters
+
+Node: dcid:SocialVulnerabilityFlag_Person_LimitedEnglish
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Limited English"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:LimitedEnglish
+
+Node: dcid:SocialVulnerabilityFlag_Person_MinorityStatus
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Minority Status"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:MinorityStatus
+
+Node: dcid:SocialVulnerabilityFlag_Person_MinorityStatusAndLanguage
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Theme Minority Status And Language"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:MinorityStatusAndLanguage
+
+Node: dcid:SocialVulnerabilityFlag_Person_NoHealthInsurance
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator No Health Insurance"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:NoHealthInsurance
+
+Node: dcid:SocialVulnerabilityFlag_Person_NoHighSchoolDiploma
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator No High School Diploma"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:NoHighSchoolDiploma
+
+Node: dcid:SocialVulnerabilityFlag_Person_OverallSVI
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Theme Overall Svi"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:OverallSVI
+
+Node: dcid:SocialVulnerabilityFlag_Person_Poverty150
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Poverty 15 0"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Poverty150
+
+Node: dcid:SocialVulnerabilityFlag_Person_SocioeconomicStatus
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Theme Socioeconomic Status"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:SocioeconomicStatus
+
+Node: dcid:SocialVulnerabilityFlag_Person_Unemployment
+typeOf: dcid:StatisticalVariable
+name: "Social Vulnerability Flag Person: Social Vulnerability Indicator Unemployment"
+populationType: dcid:Person
+measuredProperty: dcid:socialVulnerabilityFlag
+statType: dcid:measuredValue
+socialVulnerabilityIndicator: dcid:Unemployment
+
+Node: dcid:SumOfPercentiles_Household_HouseholdCharacteristics
+typeOf: dcid:StatisticalVariable
+name: "Sum Of Percentiles Household: Social Vulnerability Theme Household Characteristics"
+populationType: dcid:Household
+measuredProperty: dcid:sumOfPercentiles
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:HouseholdCharacteristics
+
+Node: dcid:SumOfPercentiles_HousingUnit_HousingTypeAndTransportation
+typeOf: dcid:StatisticalVariable
+name: "Sum Of Percentiles Housing Unit: Social Vulnerability Theme Housing Type And Transportation"
+populationType: dcid:HousingUnit
+measuredProperty: dcid:sumOfPercentiles
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:HousingTypeAndTransportation
+
+Node: dcid:SumOfPercentiles_Person_MinorityStatusAndLanguage
+typeOf: dcid:StatisticalVariable
+name: "Sum Of Percentiles Person: Social Vulnerability Theme Minority Status And Language"
+populationType: dcid:Person
+measuredProperty: dcid:sumOfPercentiles
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:MinorityStatusAndLanguage
+
+Node: dcid:SumOfPercentiles_Person_OverallSVI
+typeOf: dcid:StatisticalVariable
+name: "Sum Of Percentiles Person: Social Vulnerability Theme Overall Svi"
+populationType: dcid:Person
+measuredProperty: dcid:sumOfPercentiles
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:OverallSVI
+
+Node: dcid:SumOfPercentiles_Person_SocioeconomicStatus
+typeOf: dcid:StatisticalVariable
+name: "Sum Of Percentiles Person: Social Vulnerability Theme Socioeconomic Status"
+populationType: dcid:Person
+measuredProperty: dcid:sumOfPercentiles
+statType: dcid:measuredValue
+socialVulnerabilityTheme: dcid:SocioeconomicStatus
+

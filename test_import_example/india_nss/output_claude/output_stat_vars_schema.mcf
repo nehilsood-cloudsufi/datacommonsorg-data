@@ -1,0 +1,29 @@
+Node: dcid:placeOfResidenceClassification
+typeOf: dcs:Property
+name: "placeOfResidenceClassification"
+domainIncludes: dcid:MedicalConditionIncident
+rangeIncludes: dcid:HumanSettlementClassificationEnum,dcid:LocationClassificationEnum
+
+Node: dcid:gender
+typeOf: dcs:Property
+name: "gender"
+domainIncludes: dcid:MedicalConditionIncident
+
+Node: dcid:healthCondition
+typeOf: dcs:Property
+name: "healthCondition"
+domainIncludes: dcid:MedicalConditionIncident
+rangeIncludes: dcid:HealthConditionEnum,dcid:HealthOutcomeEnum,dcid:MedicalConditionIncidentTypeEnum,dcid:PollutantHealthRiskEnum
+isProvisional: dcs:True
+
+Node: dcid:HealthConditionEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "HealthConditionEnum"
+isProvisional: dcs:True
+
+Node: dcid:EarDisease
+typeOf: dcid:HealthConditionEnum
+name: "Ear Disease"
+isProvisional: dcs:True
+

@@ -1,0 +1,11 @@
+# Auto generated using command: "/Users/nehilsood/work/datacommonsorg-data/tools/statvar_importer/stat_var_processor.py --input_data=/Users/nehilsood/work/datacommonsorg-data/test_import_example/saipe/input/saipe_test_input.csv --pv_map=/Users/nehilsood/work/datacommonsorg-data/test_import_example/saipe/output_claude/output_pvmap.csv --config_file=/Users/nehilsood/work/datacommonsorg-data/test_import_example/saipe/output_claude/output_metadata.csv --generate_statvar_name=True --skip_constant_csv_columns=False --output_columns=observationDate,observationAbout,variableMeasured,value,observationPeriod,measurementMethod,unit,scalingFactor --output_counters=/Users/nehilsood/work/datacommonsorg-data/test_import_example/saipe/.datacommons/output_counters.csv --output_path=/Users/nehilsood/work/datacommonsorg-data/test_import_example/saipe/output_claude/output" on 2026-01-09 12:56:50.925241
+
+Node: dcid:Count_Person_5To17Years_BelowPovertyLevelInThePast12Months
+typeOf: dcid:StatisticalVariable
+name: "Count Person: Age Years 5To 17, Poverty Status Below Poverty Level In The Past 12 Months"
+populationType: dcid:Person
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 17 Years]
+povertyStatus: dcid:BelowPovertyLevelInThePast12Months
+

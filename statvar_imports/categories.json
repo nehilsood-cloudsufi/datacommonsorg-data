@@ -1,0 +1,119 @@
+{
+  "education": {
+    "description": "Education statistics including schools, colleges, and academic performance",
+    "imports": [
+      "school_algebra1",
+      "school_finance",
+      "school_retention",
+      "ipeds",
+      "us_education",
+      "us_nces",
+      "us_hbcu_data",
+      "crdc_import",
+      "crdc",
+      "ccd",
+      "us_urban_school",
+      "oecd/regional_education"
+    ]
+  },
+  "health": {
+    "description": "Health and medical statistics including diseases, births, and health surveys",
+    "imports": [
+      "child_birth",
+      "brfss_nchs_asthma_prevalence",
+      "nyu_diabetes",
+      "cdc",
+      "us_cdc",
+      "who_covid19",
+      "india_nfhs"
+    ]
+  },
+  "economics_finance": {
+    "description": "Economic indicators, GDP, interest rates, and financial data",
+    "imports": [
+      "brazil_sidra_ibge",
+      "bis",
+      "commerce_eda",
+      "gdp_by_county_metro_and_other_areas",
+      "us_federal_reserve_h15_interest_rates",
+      "world_bank/commodity_market",
+      "india_rbistatedomesticproduct",
+      "fao_currency_and_exchange_rate",
+      "database_on_indian_economy",
+      "oecd/quarterly_gdp"
+    ]
+  },
+  "employment_labor": {
+    "description": "Employment statistics, labor data, and workforce information",
+    "imports": [
+      "us_bls",
+      "doctoratedegreeemployment",
+      "us_steam_degrees_data",
+      "us_bachelors_degree_data",
+      "usa_dol",
+      "ncses/ncses_median_annual_salary"
+    ]
+  },
+  "demographics_census": {
+    "description": "Population demographics, census data, and vital statistics",
+    "imports": [
+      "ireland_census",
+      "singapore_census",
+      "finland_census",
+      "southkorea_statistics",
+      "statistics_new_zealand",
+      "census_v2",
+      "us_census",
+      "mexico_subnational_population_statistics",
+      "brazil_visdata",
+      "world_bank/subnational_demographics_stats",
+      "zurich",
+      "ncses/ncses_demographics_seh_import",
+      "uae_bayanat"
+    ]
+  },
+  "environment_safety": {
+    "description": "Environmental data, disasters, and public safety statistics",
+    "imports": [
+      "inpe_fire",
+      "oecd/wastewater_treatment",
+      "us_crash",
+      "fema",
+      "google_sustainability_financial_incentives"
+    ]
+  },
+  "crime_law_enforcement": {
+    "description": "Crime statistics and law enforcement data",
+    "imports": [
+      "fbi"
+    ]
+  },
+  "research_academia": {
+    "description": "Research output, doctorate recipients, and academic workforce",
+    "imports": [
+      "ncses/research_doctorate_recipients"
+    ]
+  },
+  "global_international": {
+    "description": "Multi-country and international organization data portals",
+    "imports": [
+      "undata",
+      "opendataforafrica",
+      "world_bank/worldbank_ids",
+      "india_ndap",
+      "mongolia_imports"
+    ]
+  },
+  "technology_infrastructure": {
+    "description": "Technology adoption, internet usage, and infrastructure data",
+    "imports": [
+      "ntia_internet_use_survey"
+    ]
+  },
+  "regional_us": {
+    "description": "US state and local specific data imports",
+    "imports": [
+      "us_newyork"
+    ]
+  }
+}

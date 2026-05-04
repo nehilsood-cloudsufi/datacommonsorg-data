@@ -1,0 +1,211 @@
+# Auto generated using command: "/Users/nehilsood/work/datacommonsorg-data/tools/statvar_importer/stat_var_processor.py --input_data=input/india_nss_health_ailments_input.csv --pv_map=output_claude/output_pvmap.csv --config_file=output_claude/output_metadata.csv --generate_statvar_name=True --output_path=final_output/output" on 2026-01-09 13:07:22.018365
+
+Node: dcid:Count_MedicalConditionIncident_15To29Years_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 15 To 29, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 29 Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_15To29Years_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 15 To 29, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 29 Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_15To29Years_Female_CardiovascularDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 15 To 29, Gender Female, Health Condition Cardiovascular Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [15 29 Years]
+gender: dcid:Female
+healthCondition: dcid:CardiovascularDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_30To44Years_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 30 To 44, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [30 44 Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_30To44Years_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 30 To 44, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [30 44 Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_45To59Years_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 45 To 59, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [45 59 Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_45To59Years_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 45 To 59, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [45 59 Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_4OrLessYears_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years Upto 4, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [- 4 Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_4OrLessYears_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years Upto 4, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [- 4 Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_4OrLessYears_Female_CardiovascularDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years Upto 4, Gender Female, Health Condition Cardiovascular Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [- 4 Years]
+gender: dcid:Female
+healthCondition: dcid:CardiovascularDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_5To14Years_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 5To 14, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 14 Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_5To14Years_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 5To 14, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [5 14 Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_60OrMoreYears_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 60 Onwards, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [60 - Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_60OrMoreYears_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 60 Onwards, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [60 - Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_60OrMoreYears_Female_EarDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 60 Onwards, Gender Female, Health Condition Ear Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [60 - Years]
+gender: dcid:Female
+healthCondition: dcid:EarDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_60To69Years_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 60 To 69, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [60 69 Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_60To69Years_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 60 To 69, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [60 69 Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_70OrMoreYears_Female_BloodDisease_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 70 Onwards, Gender Female, Health Condition Blood Disease, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [70 - Years]
+gender: dcid:Female
+healthCondition: dcid:BloodDisease
+placeOfResidenceClassification: dcid:Rural
+
+Node: dcid:Count_MedicalConditionIncident_70OrMoreYears_Female_Cancer_Rural
+typeOf: dcid:StatisticalVariable
+name: "Count Medical Condition Incident: Age Years 70 Onwards, Gender Female, Health Condition Cancer, Place Of Residence Classification Rural"
+populationType: dcid:MedicalConditionIncident
+measuredProperty: dcid:count
+statType: dcid:measuredValue
+age: [70 - Years]
+gender: dcid:Female
+healthCondition: dcid:Cancer
+placeOfResidenceClassification: dcid:Rural
+

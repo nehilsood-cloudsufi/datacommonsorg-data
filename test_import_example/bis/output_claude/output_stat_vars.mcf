@@ -1,0 +1,10 @@
+# Auto generated using command: "/Users/nehilsood/work/datacommonsorg-data/tools/statvar_importer/stat_var_processor.py --input_data=/Users/nehilsood/work/datacommonsorg-data/test_import_example/bis/input/WS_CBPOL_csv_flat_input.csv --pv_map=/Users/nehilsood/work/datacommonsorg-data/test_import_example/bis/output_claude/output_pvmap.csv --config_file=/Users/nehilsood/work/datacommonsorg-data/test_import_example/bis/output_claude/output_metadata.csv --generate_statvar_name=True --skip_constant_csv_columns=False --output_columns=observationDate,observationAbout,variableMeasured,value,observationPeriod,measurementMethod,unit,scalingFactor --output_counters=/Users/nehilsood/work/datacommonsorg-data/test_import_example/bis/.datacommons/output_counters.csv --output_path=/Users/nehilsood/work/datacommonsorg-data/test_import_example/bis/output_claude/output" on 2026-01-09 12:53:39.227081
+
+Node: dcid:InterestRate_EconomicActivity_CentralBankPolicyRate
+typeOf: dcid:StatisticalVariable
+name: "Interest Rate Economic Activity: Economic Activity Type Central Bank Policy Rate"
+populationType: dcid:EconomicActivity
+measuredProperty: dcid:interestRate
+statType: dcid:measuredValue
+economicActivityType: dcid:CentralBankPolicyRate
+

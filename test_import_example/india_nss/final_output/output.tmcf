@@ -1,0 +1,7 @@
+Node: E:output->E0
+observationAbout: C:output->observationAbout
+value: C:output->value
+variableMeasured: C:output->variableMeasured
+observationDate: 2017
+typeOf: dcs:StatVarObservation
+scalingFactor: 100000

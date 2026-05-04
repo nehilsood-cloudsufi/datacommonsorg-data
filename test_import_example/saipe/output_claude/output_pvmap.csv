@@ -1,0 +1,14 @@
+key,property1,value1,property2,value2,property3,value3,property4,value4,property5,value5,property6,value6
+# Place resolution - construct school district DCID
+State FIPS Code,StateFIPS,{Data},,,,,,,,,,
+District ID,#Format,"observationAbout=geoId/sch{StateFIPS}{Data}",,,,,,,,,,
+# Date column
+Year,observationDate,{Data},,,,,,,,,,
+# Measurement method for all observations
+Name,measurementMethod,dcs:CensusSAIPESchoolDistrict,,,,,,,,,,
+# Estimated Total Population - Count of all persons
+Estimated Total Population,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,value,{Number},,,,
+# Estimated Population 5-17 - Count of persons aged 5-17
+Estimated Population 5-17,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,value,{Number},age,"[5 17 Years]",,
+# Children 5-17 in poverty - all properties on one row
+Estimated number of relevant children 5 to 17 years old in poverty who are related to the householder,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,value,{Number},age,"[5 17 Years]",povertyStatus,dcs:BelowPovertyLevelInThePast12Months

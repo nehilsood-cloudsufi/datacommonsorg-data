@@ -1,0 +1,272 @@
+key,property1,value1,property2,value2,property3,value3,property4,value4,property5,value5,property6,value6
+
+# Geographic and temporal mappings
+FIPS,#Eval,"observationAbout='geoId/' + str(int('{Data}')).zfill(5)",,,,,,,,,,
+year,observationDate,{Data},,,,,,,,,,
+
+# ============================================
+# ESTIMATE COUNTS (E_*) - Raw population counts
+# ============================================
+
+# Total Population
+E_TOTPOP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,measurementMethod,dcs:ACS_5YearEstimate,value,{Number},,
+M_TOTPOP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,measurementMethod,dcs:ACS_5YearEstimate,value,{Number},,
+
+# Housing Units
+E_HU,populationType,dcs:HousingUnit,measuredProperty,dcs:count,statType,dcs:measuredValue,measurementMethod,dcs:ACS_5YearEstimate,value,{Number},,
+M_HU,populationType,dcs:HousingUnit,measuredProperty,dcs:count,statType,dcs:marginOfError,measurementMethod,dcs:ACS_5YearEstimate,value,{Number},,
+
+# Households
+E_HH,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:measuredValue,measurementMethod,dcs:ACS_5YearEstimate,value,{Number},,
+M_HH,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:marginOfError,measurementMethod,dcs:ACS_5YearEstimate,value,{Number},,
+
+# Below 150% Poverty
+E_POV150,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,incomeStatus,dcs:BelowPovertyLevelInThePast12Months,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_POV150,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,incomeStatus,dcs:BelowPovertyLevelInThePast12Months,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Unemployed
+E_UNEMP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,employmentStatus,dcs:BLS_Unemployed,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_UNEMP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,employmentStatus,dcs:BLS_Unemployed,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Housing Cost Burden (30%+ income on housing)
+E_HBURD,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:measuredValue,housingCostBurden,dcs:HousingCostBurden30To100Percent,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_HBURD,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:marginOfError,housingCostBurden,dcs:HousingCostBurden30To100Percent,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# No High School Diploma (age 25+)
+E_NOHSDP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,educationalAttainment,dcs:LessThanHighSchoolGraduate,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_NOHSDP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,educationalAttainment,dcs:LessThanHighSchoolGraduate,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Uninsured
+E_UNINSUR,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,healthInsurance,dcs:NoHealthInsurance,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_UNINSUR,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,healthInsurance,dcs:NoHealthInsurance,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Age 65+
+E_AGE65,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,age,dcs:Years65Onwards,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_AGE65,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,age,dcs:Years65Onwards,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Age 17 and Under
+E_AGE17,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,age,dcs:Upto17Years,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_AGE17,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,age,dcs:Upto17Years,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Disability
+E_DISABL,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,disabilityStatus,dcs:WithDisability,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_DISABL,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,disabilityStatus,dcs:WithDisability,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Single Parent Households
+E_SNGPNT,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:measuredValue,householdType,dcs:SingleParentHousehold,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_SNGPNT,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:marginOfError,householdType,dcs:SingleParentHousehold,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Limited English
+E_LIMENG,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,languageAbility,dcs:LimitedEnglishSpeaking,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_LIMENG,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,languageAbility,dcs:LimitedEnglishSpeaking,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Minority
+E_MINRTY,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:NonWhite,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_MINRTY,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:NonWhite,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Multi-Unit Housing (10+ units)
+E_MUNIT,populationType,dcs:HousingUnit,measuredProperty,dcs:count,statType,dcs:measuredValue,numberOfUnitsInStructure,dcs:10OrMoreUnitsInStructure,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_MUNIT,populationType,dcs:HousingUnit,measuredProperty,dcs:count,statType,dcs:marginOfError,numberOfUnitsInStructure,dcs:10OrMoreUnitsInStructure,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Mobile Homes
+E_MOBILE,populationType,dcs:HousingUnit,measuredProperty,dcs:count,statType,dcs:measuredValue,numberOfUnitsInStructure,dcs:MobileHome,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_MOBILE,populationType,dcs:HousingUnit,measuredProperty,dcs:count,statType,dcs:marginOfError,numberOfUnitsInStructure,dcs:MobileHome,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Crowding (more than 1 person per room)
+E_CROWD,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:measuredValue,occupantsPerRoom,dcs:MoreThan1OccupantPerRoom,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_CROWD,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:marginOfError,occupantsPerRoom,dcs:MoreThan1OccupantPerRoom,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# No Vehicle
+E_NOVEH,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:measuredValue,vehiclesAvailable,dcs:NoVehicleAvailable,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_NOVEH,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:marginOfError,vehiclesAvailable,dcs:NoVehicleAvailable,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Group Quarters
+E_GROUPQ,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,residenceType,dcs:GroupQuarters,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_GROUPQ,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,residenceType,dcs:GroupQuarters,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# ============================================
+# ESTIMATE PERCENTAGES (EP_*) - Percentages
+# ============================================
+
+# Poverty Percentage
+EP_POV150,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,incomeStatus,dcs:BelowPovertyLevelInThePast12Months,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_POV150,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,incomeStatus,dcs:BelowPovertyLevelInThePast12Months,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Unemployment Percentage
+EP_UNEMP,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,employmentStatus,dcs:BLS_Unemployed,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_UNEMP,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,employmentStatus,dcs:BLS_Unemployed,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Housing Burden Percentage
+EP_HBURD,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:measuredValue,housingCostBurden,dcs:HousingCostBurden30To100Percent,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_HBURD,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:marginOfError,housingCostBurden,dcs:HousingCostBurden30To100Percent,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# No High School Diploma Percentage
+EP_NOHSDP,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,educationalAttainment,dcs:LessThanHighSchoolGraduate,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_NOHSDP,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,educationalAttainment,dcs:LessThanHighSchoolGraduate,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Uninsured Percentage
+EP_UNINSUR,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,healthInsurance,dcs:NoHealthInsurance,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_UNINSUR,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,healthInsurance,dcs:NoHealthInsurance,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Age 65+ Percentage
+EP_AGE65,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,age,dcs:Years65Onwards,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_AGE65,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,age,dcs:Years65Onwards,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Age 17 and Under Percentage
+EP_AGE17,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,age,dcs:Upto17Years,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_AGE17,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,age,dcs:Upto17Years,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Disability Percentage
+EP_DISABL,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,disabilityStatus,dcs:WithDisability,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_DISABL,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,disabilityStatus,dcs:WithDisability,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Single Parent Percentage
+EP_SNGPNT,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:measuredValue,householdType,dcs:SingleParentHousehold,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_SNGPNT,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:marginOfError,householdType,dcs:SingleParentHousehold,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Limited English Percentage
+EP_LIMENG,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,languageAbility,dcs:LimitedEnglishSpeaking,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_LIMENG,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,languageAbility,dcs:LimitedEnglishSpeaking,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Minority Percentage
+EP_MINRTY,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:NonWhite,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_MINRTY,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:NonWhite,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Multi-Unit Percentage
+EP_MUNIT,populationType,dcs:HousingUnit,measuredProperty,dcs:percent,statType,dcs:measuredValue,numberOfUnitsInStructure,dcs:10OrMoreUnitsInStructure,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_MUNIT,populationType,dcs:HousingUnit,measuredProperty,dcs:percent,statType,dcs:marginOfError,numberOfUnitsInStructure,dcs:10OrMoreUnitsInStructure,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Mobile Home Percentage
+EP_MOBILE,populationType,dcs:HousingUnit,measuredProperty,dcs:percent,statType,dcs:measuredValue,numberOfUnitsInStructure,dcs:MobileHome,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_MOBILE,populationType,dcs:HousingUnit,measuredProperty,dcs:percent,statType,dcs:marginOfError,numberOfUnitsInStructure,dcs:MobileHome,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Crowding Percentage
+EP_CROWD,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:measuredValue,occupantsPerRoom,dcs:MoreThan1OccupantPerRoom,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_CROWD,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:marginOfError,occupantsPerRoom,dcs:MoreThan1OccupantPerRoom,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# No Vehicle Percentage
+EP_NOVEH,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:measuredValue,vehiclesAvailable,dcs:NoVehicleAvailable,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_NOVEH,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:marginOfError,vehiclesAvailable,dcs:NoVehicleAvailable,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Group Quarters Percentage
+EP_GROUPQ,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,residenceType,dcs:GroupQuarters,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_GROUPQ,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,residenceType,dcs:GroupQuarters,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# ============================================
+# PERCENTILE RANKINGS (EPL_*) - Individual percentiles
+# ============================================
+
+EPL_POV150,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Poverty150,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_UNEMP,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Unemployment,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_HBURD,populationType,dcs:Household,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:HousingCostBurden,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_NOHSDP,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:NoHighSchoolDiploma,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_UNINSUR,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:NoHealthInsurance,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_AGE65,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Age65OrOlder,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_AGE17,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Age17OrYounger,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_DISABL,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Disability,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_SNGPNT,populationType,dcs:Household,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:SingleParentHousehold,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_LIMENG,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:LimitedEnglish,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_MINRTY,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:MinorityStatus,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_MUNIT,populationType,dcs:HousingUnit,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:MultiUnitHousing,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_MOBILE,populationType,dcs:HousingUnit,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:MobileHomes,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_CROWD,populationType,dcs:Household,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Crowding,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_NOVEH,populationType,dcs:Household,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:NoVehicle,measurementMethod,dcs:CDC_SVI,value,{Number}
+EPL_GROUPQ,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:GroupQuarters,measurementMethod,dcs:CDC_SVI,value,{Number}
+
+# ============================================
+# THEME SCORES (SPL_* and RPL_*)
+# ============================================
+
+# Theme 1: Socioeconomic Status
+SPL_THEME1,populationType,dcs:Person,measuredProperty,dcs:sumOfPercentiles,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:SocioeconomicStatus,measurementMethod,dcs:CDC_SVI,value,{Number}
+RPL_THEME1,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:SocioeconomicStatus,measurementMethod,dcs:CDC_SVI,value,{Number}
+
+# Theme 2: Household Characteristics
+SPL_THEME2,populationType,dcs:Household,measuredProperty,dcs:sumOfPercentiles,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:HouseholdCharacteristics,measurementMethod,dcs:CDC_SVI,value,{Number}
+RPL_THEME2,populationType,dcs:Household,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:HouseholdCharacteristics,measurementMethod,dcs:CDC_SVI,value,{Number}
+
+# Theme 3: Racial & Ethnic Minority Status
+SPL_THEME3,populationType,dcs:Person,measuredProperty,dcs:sumOfPercentiles,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:MinorityStatusAndLanguage,measurementMethod,dcs:CDC_SVI,value,{Number}
+RPL_THEME3,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:MinorityStatusAndLanguage,measurementMethod,dcs:CDC_SVI,value,{Number}
+
+# Theme 4: Housing Type & Transportation
+SPL_THEME4,populationType,dcs:HousingUnit,measuredProperty,dcs:sumOfPercentiles,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:HousingTypeAndTransportation,measurementMethod,dcs:CDC_SVI,value,{Number}
+RPL_THEME4,populationType,dcs:HousingUnit,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:HousingTypeAndTransportation,measurementMethod,dcs:CDC_SVI,value,{Number}
+
+# Overall SVI
+SPL_THEMES,populationType,dcs:Person,measuredProperty,dcs:sumOfPercentiles,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:OverallSVI,measurementMethod,dcs:CDC_SVI,value,{Number}
+RPL_THEMES,populationType,dcs:Person,measuredProperty,dcs:percentile,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:OverallSVI,measurementMethod,dcs:CDC_SVI,value,{Number}
+
+# ============================================
+# FLAGS (F_*) - Binary vulnerability flags
+# ============================================
+
+F_POV150,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Poverty150,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_UNEMP,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Unemployment,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_HBURD,populationType,dcs:Household,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:HousingCostBurden,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_NOHSDP,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:NoHighSchoolDiploma,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_UNINSUR,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:NoHealthInsurance,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_THEME1,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:SocioeconomicStatus,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_AGE65,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Age65OrOlder,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_AGE17,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Age17OrYounger,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_DISABL,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Disability,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_SNGPNT,populationType,dcs:Household,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:SingleParentHousehold,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_LIMENG,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:LimitedEnglish,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_THEME2,populationType,dcs:Household,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:HouseholdCharacteristics,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_MINRTY,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:MinorityStatus,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_THEME3,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:MinorityStatusAndLanguage,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_MUNIT,populationType,dcs:HousingUnit,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:MultiUnitHousing,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_MOBILE,populationType,dcs:HousingUnit,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:MobileHomes,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_CROWD,populationType,dcs:Household,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:Crowding,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_NOVEH,populationType,dcs:Household,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:NoVehicle,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_GROUPQ,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityIndicator,dcs:GroupQuarters,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_THEME4,populationType,dcs:HousingUnit,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:HousingTypeAndTransportation,measurementMethod,dcs:CDC_SVI,value,{Number}
+F_TOTAL,populationType,dcs:Person,measuredProperty,dcs:socialVulnerabilityFlag,statType,dcs:measuredValue,socialVulnerabilityTheme,dcs:OverallSVI,measurementMethod,dcs:CDC_SVI,value,{Number}
+
+# ============================================
+# ADDITIONAL VARIABLES
+# ============================================
+
+# Daytime Population
+E_DAYPOP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,measurementQualifier,dcs:DaytimePopulation,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# No Internet
+E_NOINT,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:measuredValue,internetAccess,dcs:NoInternetAccess,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_NOINT,populationType,dcs:Household,measuredProperty,dcs:count,statType,dcs:marginOfError,internetAccess,dcs:NoInternetAccess,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+EP_NOINT,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:measuredValue,internetAccess,dcs:NoInternetAccess,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_NOINT,populationType,dcs:Household,measuredProperty,dcs:percent,statType,dcs:marginOfError,internetAccess,dcs:NoInternetAccess,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Racial/Ethnic Breakdowns - Estimates
+E_AFAM,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:BlackOrAfricanAmericanAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_AFAM,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:BlackOrAfricanAmericanAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+E_HISP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:HispanicOrLatino,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_HISP,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:HispanicOrLatino,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+E_ASIAN,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:AsianAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_ASIAN,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:AsianAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+E_AIAN,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:AmericanIndianOrAlaskaNativeAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_AIAN,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:AmericanIndianOrAlaskaNativeAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+E_NHPI,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:NativeHawaiianOrOtherPacificIslanderAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_NHPI,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:NativeHawaiianOrOtherPacificIslanderAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+E_TWOMORE,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:TwoOrMoreRaces,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_TWOMORE,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:TwoOrMoreRaces,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+E_OTHERRACE,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,race,dcs:SomeOtherRaceAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+M_OTHERRACE,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:marginOfError,race,dcs:SomeOtherRaceAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Racial/Ethnic Breakdowns - Percentages
+EP_AFAM,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:BlackOrAfricanAmericanAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_AFAM,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:BlackOrAfricanAmericanAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+EP_HISP,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:HispanicOrLatino,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_HISP,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:HispanicOrLatino,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+EP_ASIAN,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:AsianAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_ASIAN,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:AsianAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+EP_AIAN,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:AmericanIndianOrAlaskaNativeAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_AIAN,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:AmericanIndianOrAlaskaNativeAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+EP_NHPI,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:NativeHawaiianOrOtherPacificIslanderAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_NHPI,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:NativeHawaiianOrOtherPacificIslanderAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+EP_TWOMORE,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:TwoOrMoreRaces,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_TWOMORE,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:TwoOrMoreRaces,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+EP_OTHERRACE,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:measuredValue,race,dcs:SomeOtherRaceAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+MP_OTHERRACE,populationType,dcs:Person,measuredProperty,dcs:percent,statType,dcs:marginOfError,race,dcs:SomeOtherRaceAlone,measurementMethod,dcs:ACS_5YearEstimate,value,{Number}
+
+# Area
+AREA_SQMI,populationType,dcs:Place,measuredProperty,dcs:area,statType,dcs:measuredValue,measurementMethod,dcs:CDC_SVI,unit,dcs:SquareMile,value,{Number}

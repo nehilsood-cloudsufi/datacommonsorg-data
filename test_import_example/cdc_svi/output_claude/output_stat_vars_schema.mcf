@@ -1,0 +1,233 @@
+Node: dcid:incomeStatus
+typeOf: dcs:Property
+name: "incomeStatus"
+rangeIncludes: dcid:USC_PovertyStatusEnum
+
+Node: dcid:housingCostBurden
+typeOf: dcs:Property
+name: "housingCostBurden"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:HousingCostBurdenEnum
+isProvisional: dcs:True
+
+Node: dcid:HousingCostBurdenEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "HousingCostBurdenEnum"
+isProvisional: dcs:True
+
+Node: dcid:HousingCostBurden30To100Percent
+typeOf: dcid:HousingCostBurdenEnum
+name: "Housing Cost Burden 30 To 10 0Percent"
+isProvisional: dcs:True
+
+Node: dcid:Upto17Years
+typeOf: dcid:AgeStatusEnum
+name: "Upto 17 Years"
+isProvisional: dcs:True
+
+Node: dcid:SingleParentHousehold
+typeOf: dcid:FamilyTypeEnum
+name: "Single Parent Household"
+isProvisional: dcs:True
+
+Node: dcid:languageAbility
+typeOf: dcs:Property
+name: "languageAbility"
+domainIncludes: dcid:Person
+rangeIncludes: dcid:LanguageAbilityEnum
+isProvisional: dcs:True
+
+Node: dcid:LanguageAbilityEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "LanguageAbilityEnum"
+isProvisional: dcs:True
+
+Node: dcid:LimitedEnglishSpeaking
+typeOf: dcid:LanguageAbilityEnum
+name: "Limited English Speaking"
+isProvisional: dcs:True
+
+Node: dcid:numberOfUnitsInStructure
+typeOf: dcs:Property
+name: "numberOfUnitsInStructure"
+domainIncludes: dcid:HousingUnit
+rangeIncludes: dcid:NumberOfUnitsInStructureEnum
+isProvisional: dcs:True
+
+Node: dcid:NumberOfUnitsInStructureEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "NumberOfUnitsInStructureEnum"
+isProvisional: dcs:True
+
+Node: dcid:10OrMoreUnitsInStructure
+typeOf: dcid:NumberOfUnitsInStructureEnum
+name: "1 0Or More Units In Structure"
+isProvisional: dcs:True
+
+Node: dcid:MobileHome
+typeOf: dcid:NumberOfUnitsInStructureEnum
+name: "Mobile Home"
+isProvisional: dcs:True
+
+Node: dcid:occupantsPerRoom
+typeOf: dcs:Property
+name: "occupantsPerRoom"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:OccupantsPerRoomEnum
+isProvisional: dcs:True
+
+Node: dcid:OccupantsPerRoomEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "OccupantsPerRoomEnum"
+isProvisional: dcs:True
+
+Node: dcid:MoreThan1OccupantPerRoom
+typeOf: dcid:OccupantsPerRoomEnum
+name: "More Than 1Occupant Per Room"
+isProvisional: dcs:True
+
+Node: dcid:NoVehicleAvailable
+typeOf: dcid:Quantity
+name: "No Vehicle Available"
+isProvisional: dcs:True
+
+Node: dcid:healthInsurance
+typeOf: dcs:Property
+name: "healthInsurance"
+rangeIncludes: dcid:HealthPreventionEnum,dcid:USC_HealthInsuranceEnum
+
+Node: dcid:percentile
+typeOf: dcs:Property
+name: "percentile"
+rangeIncludes: dcid:PercentileEnum
+isProvisional: dcs:True
+
+Node: dcid:socialVulnerabilityIndicator
+typeOf: dcs:Property
+name: "socialVulnerabilityIndicator"
+domainIncludes: dcid:Household,dcid:HousingUnit,dcid:Person
+rangeIncludes: dcid:FamilyTypeEnum,dcid:HealthPreventionEnum,dcid:SocialVulnerabilityIndicatorEnum,dcid:USC_HealthInsuranceEnum,dcid:USC_ResidenceTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:SocialVulnerabilityIndicatorEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "SocialVulnerabilityIndicatorEnum"
+isProvisional: dcs:True
+
+Node: dcid:Poverty150
+typeOf: dcid:SocialVulnerabilityIndicatorEnum
+name: "Poverty 15 0"
+isProvisional: dcs:True
+
+Node: dcid:Unemployment
+typeOf: dcid:SocialVulnerabilityIndicatorEnum
+name: "Unemployment"
+isProvisional: dcs:True
+
+Node: dcid:HousingCostBurden
+typeOf: dcid:SocialVulnerabilityIndicatorEnum
+name: "Housing Cost Burden"
+isProvisional: dcs:True
+
+Node: dcid:NoHighSchoolDiploma
+typeOf: dcid:SocialVulnerabilityIndicatorEnum
+name: "No High School Diploma"
+isProvisional: dcs:True
+
+Node: dcid:sumOfPercentiles
+typeOf: dcs:Property
+name: "sumOfPercentiles"
+rangeIncludes: dcid:SumOfPercentilesEnum
+isProvisional: dcs:True
+
+Node: dcid:socialVulnerabilityTheme
+typeOf: dcs:Property
+name: "socialVulnerabilityTheme"
+domainIncludes: dcid:Household,dcid:HousingUnit,dcid:Person
+rangeIncludes: dcid:VulnerabilityStatusEnum
+isProvisional: dcs:True
+
+Node: dcid:Age65OrOlder
+typeOf: dcid:HealthPreventionEnum
+name: "Age 65 Or Older"
+isProvisional: dcs:True
+
+Node: dcid:Age17OrYounger
+typeOf: dcid:HealthPreventionEnum
+name: "Age 17 Or Younger"
+isProvisional: dcs:True
+
+Node: dcid:Disability
+typeOf: dcid:HealthPreventionEnum
+name: "Disability"
+isProvisional: dcs:True
+
+Node: dcid:LimitedEnglish
+typeOf: dcid:FamilyTypeEnum
+name: "Limited English"
+isProvisional: dcs:True
+
+Node: dcid:MinorityStatus
+typeOf: dcid:FamilyTypeEnum
+name: "Minority Status"
+isProvisional: dcs:True
+
+Node: dcid:MinorityStatusAndLanguage
+typeOf: dcid:VulnerabilityStatusEnum
+name: "Minority Status And Language"
+isProvisional: dcs:True
+
+Node: dcid:MultiUnitHousing
+typeOf: dcid:FamilyTypeEnum
+name: "Multi Unit Housing"
+isProvisional: dcs:True
+
+Node: dcid:MobileHomes
+typeOf: dcid:FamilyTypeEnum
+name: "Mobile Homes"
+isProvisional: dcs:True
+
+Node: dcid:Crowding
+typeOf: dcid:FamilyTypeEnum
+name: "Crowding"
+isProvisional: dcs:True
+
+Node: dcid:NoVehicle
+typeOf: dcid:FamilyTypeEnum
+name: "No Vehicle"
+isProvisional: dcs:True
+
+Node: dcid:OverallSVI
+typeOf: dcid:VulnerabilityStatusEnum
+name: "Overall SVI"
+isProvisional: dcs:True
+
+Node: dcid:socialVulnerabilityFlag
+typeOf: dcs:Property
+name: "socialVulnerabilityFlag"
+rangeIncludes: dcid:SocialVulnerabilityFlagEnum
+isProvisional: dcs:True
+
+Node: dcid:MeasurementQualifierEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "MeasurementQualifierEnum"
+isProvisional: dcs:True
+
+Node: dcid:DaytimePopulation
+typeOf: dcid:MeasurementQualifierEnum
+name: "Daytime Population"
+isProvisional: dcs:True
+
+Node: dcid:internetAccess
+typeOf: dcs:Property
+name: "internetAccess"
+domainIncludes: dcid:Household
+rangeIncludes: dcid:USC_InternetAccessStatusEnum
+isProvisional: dcs:True
+

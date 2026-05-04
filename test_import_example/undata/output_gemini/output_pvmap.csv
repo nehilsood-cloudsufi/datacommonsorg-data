@@ -1,0 +1,13 @@
+key,p1,v1,p2,v2,p3,v3,p4,v4
+Value,value,{Number},,,,
+Year,observationDate,{Data},,,,
+Source Year,SourceYear,{Data},observationDate,"",,,
+Sex:Both Sexes,populationType,Person,measuredProperty,count,statType,measuredValue,
+Sex:Male,populationType,Person,measuredProperty,count,statType,measuredValue,gender,Male
+Sex:Female,populationType,Person,measuredProperty,count,statType,measuredValue,gender,Female
+City:MARIEHAMN,observationAbout,wikidataId/Q48329,CityName,MARIEHAMN,,,
+Record Type,measurementMethod,UNData,,,,
+Value Footnotes,IgnoreFootnote,{Data},value,"",,,
+Area,IgnoreArea,{Data},,,,
+City type,IgnoreCityType,{Data},CityName,"",,,
+Country or Area,IgnoreCountry,{Data},,,,

@@ -1,0 +1,18 @@
+Node: dcid:economicActivityType
+typeOf: dcs:Property
+name: "economicActivityType"
+domainIncludes: dcid:EconomicActivity
+rangeIncludes: dcid:EconomicActivityTypeEnum
+isProvisional: dcs:True
+
+Node: dcid:EconomicActivityTypeEnum
+typeOf: schema:Class
+subClassOf: dcs:Enumeration
+name: "EconomicActivityTypeEnum"
+isProvisional: dcs:True
+
+Node: dcid:CentralBankPolicyRate
+typeOf: dcid:EconomicActivityTypeEnum
+name: "Central Bank Policy Rate"
+isProvisional: dcs:True
+

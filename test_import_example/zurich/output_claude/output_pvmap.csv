@@ -1,0 +1,10 @@
+key,property1,value1,property2,value2,property3,value3,property4,value4
+# Time column - observation date
+Zeit,observationDate,{Data},,,,,,
+# Sex column - gender mapping
+Sex:M,gender,dcs:Male,,,,,,
+Sex:F,gender,dcs:Female,,,,,,
+# Birth count column - the measured value
+bir,value,{Number},populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue
+# Wiki ID column - place reference using wikidataId prefix
+wikiID,#Format,"observationAbout=wikidataId/{Data}",,,,,,

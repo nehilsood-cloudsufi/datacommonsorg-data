@@ -1,0 +1,18 @@
+key,property1,value1,property2,value2,property3,value3,property4,value4,property5,value5
+# StatVar mandatory properties - applied only to Value column (not Value Footnotes)
+Value,populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue,value,{Number},observationPeriod,P1Y
+# Skip Value Footnotes column - use empty intermediate property instead of #ignore
+Value Footnotes,FootnoteSkipped,"",,,,,,,,
+# Observation date - Source Year should use an intermediate property to avoid conflict
+Source Year,SourceYearValue,{Data},,,,,,,,
+# Year column (col 1) for actual observation date
+Year,observationDate,{Data},,,,,,,,
+# Place resolution - use proper Wikidata ID for Mariehamn
+# Mariehamn (capital of Åland Islands) has Wikidata ID Q48329
+City:MARIEHAMN,observationAbout,wikidataId/Q48329,,,,,,,,
+# Sex/Gender constraint mappings with column namespace
+Sex:Both Sexes,gender,"",,,,,,,,
+Sex:Male,gender,dcs:Male,,,,,,,,
+Sex:Female,gender,dcs:Female,,,,,,,,
+# Record Type for measurement method
+Record Type:Estimate - de jure,measurementMethod,dcs:UNDataEstimateDeJure,,,,,,,,

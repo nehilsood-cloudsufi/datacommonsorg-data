@@ -1,0 +1,8 @@
+Node: E:output->E0
+observationDate: C:output->observationDate
+value: C:output->value
+variableMeasured: C:output->variableMeasured
+measurementMethod: dcs:UNDataEstimateDeJure
+observationPeriod: P1Y
+observationAbout: wikidataId/Q48329
+typeOf: dcs:StatVarObservation

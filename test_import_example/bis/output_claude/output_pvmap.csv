@@ -1,0 +1,14 @@
+key,property1,value1,property2,value2,property3,value3,property4,value4
+# Dataset identification - Central bank policy rates
+BIS:WS_CBPOL(1.0): Central bank policy rates,measuredProperty,interestRate,populationType,EconomicActivity,statType,measuredValue,economicActivityType,CentralBankPolicyRate
+# Frequency mappings
+M: Monthly,observationPeriod,P1M
+D: Daily,observationPeriod,P1D
+# Reference area (country) mappings - extract ISO code and map to country DCID
+REF_AREA:Reference area,#Regex,"(?P<CountryCode>[A-Z]{2}): .*",observationAbout,country/{CountryCode}
+# Time period mapping
+TIME_PERIOD:Time period or range,observationDate,{Data}
+# Observation value mapping
+OBS_VALUE:Observation Value,value,{Number}
+# Unit of measure
+368: Per cent per year,unit,PercentPerAnnum

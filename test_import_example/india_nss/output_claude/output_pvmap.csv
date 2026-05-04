@@ -1,0 +1,65 @@
+key,property1,value1,property2,value2,property3,value3,property4,value4,property5,value5
+
+# Global properties for population type and measured property
+# Using Ailments reported column for rate per 100000 persons
+Ailments reported for each Broad ailment category per 100000 persons during last 15 days by different age groups,measuredProperty,count,populationType,MedicalConditionIncident,statType,measuredValue,value,{Number},scalingFactor,100000
+
+# Date mapping
+srcYear,observationDate,{Data},,,,,,,,
+
+# TRU (Rural/Urban) mappings
+TRU:Rural,placeOfResidenceClassification,Rural,,,,,,,,
+TRU:Urban,placeOfResidenceClassification,Urban,,,,,,,,
+
+# Gender mappings
+GENDER:Female,gender,Female,,,,,,,,
+GENDER:Male,gender,Male,,,,,,,,
+GENDER:Total,gender,"",,,,,,,,
+
+# Broad ailment category mappings
+Broad ailment category:Blood diseases,healthCondition,BloodDisease,,,,,,,,
+Broad ailment category:Cancers,healthCondition,Cancer,,,,,,,,
+Broad ailment category:Cardio-vascular,healthCondition,CardiovascularDisease,,,,,,,,
+Broad ailment category:Ear,healthCondition,EarDisease,,,,,,,,
+
+# Age group mappings using Data Commons range format
+Age group:0-4,age,[- 4 Years],,,,,,,,
+Age group:5-14,age,[5 14 Years],,,,,,,,
+Age group:15-29,age,[15 29 Years],,,,,,,,
+Age group:30-44,age,[30 44 Years],,,,,,,,
+Age group:45-59,age,[45 59 Years],,,,,,,,
+Age group:60+,age,[60 - Years],,,,,,,,
+Age group:60-69,age,[60 69 Years],,,,,,,,
+Age group:70+,age,[70 - Years],,,,,,,,
+
+# State mappings - using wikidataId for Indian states
+srcStateName:Jammu And Kashmir,observationAbout,wikidataId/Q1180,,,,,,,,
+srcStateName:Punjab,observationAbout,wikidataId/Q22424,,,,,,,,
+srcStateName:Himachal Pradesh,observationAbout,wikidataId/Q1177,,,,,,,,
+srcStateName:Uttarakhand,observationAbout,wikidataId/Q1499,,,,,,,,
+srcStateName:Haryana,observationAbout,wikidataId/Q1174,,,,,,,,
+srcStateName:Delhi,observationAbout,wikidataId/Q1353,,,,,,,,
+srcStateName:Rajasthan,observationAbout,wikidataId/Q1437,,,,,,,,
+srcStateName:Uttar Pradesh,observationAbout,wikidataId/Q1498,,,,,,,,
+srcStateName:Bihar,observationAbout,wikidataId/Q1165,,,,,,,,
+srcStateName:Assam,observationAbout,wikidataId/Q1164,,,,,,,,
+srcStateName:West Bengal,observationAbout,wikidataId/Q1356,,,,,,,,
+srcStateName:Jharkhand,observationAbout,wikidataId/Q1184,,,,,,,,
+srcStateName:Odisha,observationAbout,wikidataId/Q22048,,,,,,,,
+srcStateName:Chhattisgarh,observationAbout,wikidataId/Q1168,,,,,,,,
+srcStateName:Madhya Pradesh,observationAbout,wikidataId/Q1188,,,,,,,,
+srcStateName:Gujarat,observationAbout,wikidataId/Q1061,,,,,,,,
+srcStateName:Maharashtra,observationAbout,wikidataId/Q1191,,,,,,,,
+srcStateName:Kerala,observationAbout,wikidataId/Q1186,,,,,,,,
+srcStateName:Andhra Pradesh,observationAbout,wikidataId/Q1159,,,,,,,,
+srcStateName:Karnataka,observationAbout,wikidataId/Q1185,,,,,,,,
+srcStateName:Tamil Nadu,observationAbout,wikidataId/Q1445,,,,,,,,
+srcStateName:Telangana,observationAbout,wikidataId/Q677037,,,,,,,,
+srcStateName:Sikkim,observationAbout,wikidataId/Q1505,,,,,,,,
+srcStateName:Arunachal Pradesh,observationAbout,wikidataId/Q1162,,,,,,,,
+srcStateName:Nagaland,observationAbout,wikidataId/Q1599,,,,,,,,
+srcStateName:Manipur,observationAbout,wikidataId/Q1193,,,,,,,,
+srcStateName:Mizoram,observationAbout,wikidataId/Q1502,,,,,,,,
+srcStateName:Tripura,observationAbout,wikidataId/Q1363,,,,,,,,
+srcStateName:Meghalaya,observationAbout,wikidataId/Q1195,,,,,,,,
+srcStateName:Goa,observationAbout,wikidataId/Q1171,,,,,,,,
