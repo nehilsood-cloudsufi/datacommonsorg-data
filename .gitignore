@@ -24,4 +24,5 @@ import-automation/executor/config_override.json
 
 .venv/
 
+ground_truth/
 
