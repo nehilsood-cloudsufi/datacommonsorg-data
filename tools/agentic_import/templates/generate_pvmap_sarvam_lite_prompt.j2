@@ -1,0 +1,112 @@
+Generate two CSV config files for the Data Commons StatVar processor.
+
+## OUTPUT FORMAT — START YOUR RESPONSE WITH THE FIRST === BEGIN LINE. NO TEXT BEFORE IT.
+
+=== BEGIN {{output_path_abs}}_pvmap.csv ===
+<pvmap content here>
+=== END {{output_path_abs}}_pvmap.csv ===
+
+=== BEGIN {{output_path_abs}}_metadata.csv ===
+<metadata content here>
+=== END {{output_path_abs}}_metadata.csv ===
+
+---
+
+## RULES
+
+### pvmap.csv
+- Format: `source_string,property1,value1,property2,value2,...`
+- First column is a column header name OR a `ColumnName:CellValue` pair from the input CSV
+- Must include mappings for: **populationType**, **measuredProperty**, **statType**, **observationAbout**, **observationDate**, **value**
+- Use `dcs:` prefix for DC schema values (e.g., `dcs:Person`, `dcs:count`, `dcs:measuredValue`)
+- Map value column: `VALUE,value,{Number}`
+- Map date column: `YEAR,observationDate,{Data}` (or whatever the year column is named)
+- Map place column: `iso3,observationAbout,country/{Data}` (use iso3 code with country/ prefix)
+- For constraint columns (e.g., outcome type): map `ColumnName:CellValue,constraintProp,dcs:CellValueAsDCID` for each unique value
+- Use `#ignore` to drop non-data columns (like identifier columns)
+- Each source string must appear exactly once
+
+### metadata.csv
+- Format: `parameter,value`
+- Always include `header_rows,1`
+- Include `ignore_columns` to list columns that are purely identifiers
+
+### StatVar naming
+- populationType is usually `dcs:Person` for health/demographic data
+- measuredProperty is `dcs:count` for counting observations
+- statType is `dcs:measuredValue` for absolute values
+
+---
+
+## EXAMPLE
+
+Input CSV columns: `StateCode, Gender, Year, Population`
+Sample rows:
+```
+CA,Male,2020,19500000
+CA,Female,2020,20100000
+```
+
+pvmap.csv:
+```
+StateCode,observationAbout,geoId/{Data}
+Gender:Male,gender,dcs:Male
+Gender:Female,gender,dcs:Female
+Year,observationDate,{Data}
+Population,value,{Number},populationType,dcs:Person,measuredProperty,dcs:count,statType,dcs:measuredValue
+```
+
+metadata.csv:
+```
+parameter,value
+header_rows,1
+```
+
+---
+
+## YOUR INPUT DATA
+
+**Output path prefix:** `{{output_path_abs}}`
+
+### Input CSV (first 20 rows of `{{input_data_abs}}`)
+
+```csv
+{{input_data_sample}}
+```
+
+{% if input_metadata_contents %}
+### Existing metadata files
+
+{% for meta in input_metadata_contents %}
+`{{meta.path}}`:
+```
+{{meta.content}}
+```
+{% endfor %}
+{% endif %}
+
+{% if previous_error %}
+---
+## PREVIOUS ATTEMPT FAILED — FIX THESE ERRORS
+
+Error:
+```
+{{previous_error}}
+```
+
+Previous pvmap.csv:
+```
+{{previous_pvmap}}
+```
+
+Previous metadata.csv:
+```
+{{previous_metadata}}
+```
+
+Fix the errors and regenerate both files.
+{% endif %}
+
+---
+
+## OUTPUT — START IMMEDIATELY WITH === BEGIN, NO PREAMBLE
