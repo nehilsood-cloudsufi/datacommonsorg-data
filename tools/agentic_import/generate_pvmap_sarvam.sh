@@ -60,7 +60,7 @@ function setup_python_environment {
         echo "Skipping Python environment setup (SKIP_PYTHON_SETUP=true)"
     fi
     echo "Activating Python virtual environment..."
-    source .env/bin/activate
+    source .venv/bin/activate
 }
 
 function run_sarvam_pvmap_generator {

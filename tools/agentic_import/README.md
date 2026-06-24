@@ -71,7 +71,7 @@ Set up the Python virtual environment:
 ./run_tests.sh -r
 
 # Activate the virtual environment
-source .env/bin/activate
+source .venv/bin/activate
 
 # Note: Use this Python environment for all subsequent commands
 # as it has all required dependencies installed
@@ -99,7 +99,7 @@ export WORKING_DIR=$(pwd)
 cd $WORKING_DIR
 
 # Confirm virtual environment is activated
-source $DC_DATA_REPO_PATH/.env/bin/activate
+source $DC_DATA_REPO_PATH/.venv/bin/activate
 ```
 
 ### Step 4: Data Download

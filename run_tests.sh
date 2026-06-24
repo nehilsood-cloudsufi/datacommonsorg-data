@@ -23,8 +23,8 @@ PYTHON_FOLDERS="util/ tools/ import-automation/executor scripts/"
 PYTHON_REQUIREMENTS_INSTALLED="${PYTHON_REQUIREMENTS_INSTALLED:-false}"
 
 function setup_python {
-  python3 -m venv .env
-  source .env/bin/activate
+  python3 -m venv .venv
+  source .venv/bin/activate
   if [[ "$PYTHON_REQUIREMENTS_INSTALLED" = false ]]
   then
     echo "Installing Python requirements"

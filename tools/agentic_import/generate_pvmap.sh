@@ -59,7 +59,7 @@ function setup_python_environment {
     
     # Activate the environment
     echo "Activating Python virtual environment..."
-    source .env/bin/activate 
+    source .venv/bin/activate
 }
 
 # Function to run the PV map generator
