@@ -110,8 +110,8 @@ Ensure prerequisites are installed
 Install requirements and setup a virtual environment to isolate python development in this repo.
 
 ```shell
-python3 -m venv .env
-source .env/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 
 pip3 install -r requirements_all.txt
 ```

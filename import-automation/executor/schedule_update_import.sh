@@ -53,8 +53,8 @@ done
 GCP_PROJECT_ID=$2
 IMPORT_PATH=$3
 
-python3 -m venv .env
-. .env/bin/activate
+python3 -m venv .venv
+. .venv/bin/activate
 pip3 install --disable-pip-version-check -q -r requirements.txt
 python3 -m schedule_update_import --gcp_project_id=$GCP_PROJECT_ID --mode=$MODE --absolute_import_path=$IMPORT_PATH --config_override=$CONFIG
 

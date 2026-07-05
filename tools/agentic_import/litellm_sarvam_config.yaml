@@ -1,0 +1,68 @@
+# LiteLLM proxy configuration: intercepts Gemini CLI requests and routes to Sarvam AI.
+#
+# Usage:
+#   export SARVAM_API_KEY="your-sarvam-api-key"
+#   litellm --config litellm_sarvam_config.yaml --port 4000
+#
+# Then in your agentic_import session:
+#   export GOOGLE_GEMINI_BASE_URL="http://localhost:4000"
+#   export GEMINI_API_KEY="dummy-key"
+#   ./generate_pvmap.sh --input_data=...
+
+model_list:
+  # Map every Gemini model variant to Sarvam 30B (sarvam-30b).
+  # sarvam-30b supports tool calling; sarvam-m does NOT.
+  # Change to sarvam-105b for the 105B model.
+
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: openai/sarvam-30b
+      api_key: os.environ/SARVAM_API_KEY
+      api_base: "https://api.sarvam.ai/v1"
+
+  - model_name: gemini-2.5-flash
+    litellm_params:
+      model: openai/sarvam-30b
+      api_key: os.environ/SARVAM_API_KEY
+      api_base: "https://api.sarvam.ai/v1"
+
+  - model_name: gemini-2.5-flash-preview-05-20
+    litellm_params:
+      model: openai/sarvam-30b
+      api_key: os.environ/SARVAM_API_KEY
+      api_base: "https://api.sarvam.ai/v1"
+
+  - model_name: gemini-2.0-flash
+    litellm_params:
+      model: openai/sarvam-30b
+      api_key: os.environ/SARVAM_API_KEY
+      api_base: "https://api.sarvam.ai/v1"
+
+  - model_name: gemini-1.5-pro
+    litellm_params:
+      model: openai/sarvam-30b
+      api_key: os.environ/SARVAM_API_KEY
+      api_base: "https://api.sarvam.ai/v1"
+
+  - model_name: gemini-1.5-flash
+    litellm_params:
+      model: openai/sarvam-30b
+      api_key: os.environ/SARVAM_API_KEY
+      api_base: "https://api.sarvam.ai/v1"
+
+  # Catch-all fallback for any other gemini-* model name
+  - model_name: "gemini-*"
+    litellm_params:
+      model: openai/sarvam-30b
+      api_key: os.environ/SARVAM_API_KEY
+      api_base: "https://api.sarvam.ai/v1"
+
+litellm_settings:
+  # Drop unsupported parameters to avoid errors with Sarvam
+  drop_params: true
+  # Enable request/response logging for debugging
+  set_verbose: false
+
+general_settings:
+  # Allow the Gemini CLI to reach the proxy over HTTP
+  allow_http_localhost: true

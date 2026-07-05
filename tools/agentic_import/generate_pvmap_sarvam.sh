@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2020 Google LLC
+# Copyright 2025 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,67 +13,64 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# PV Map generator using Sarvam AI API.
+# Usage:
+#   export SARVAM_API_KEY="your-api-key"
+#   ./generate_pvmap_sarvam.sh \
+#       --input_data=sample_data.csv \
+#       --model=sarvam-m \
+#       --output_path=output/output
 
 set -euo pipefail
 
-# Save original directory at the start
 ORIGINAL_DIR="$(pwd)"
-
-# Get the directory where this script is located
 SCRIPT_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
-
-# Get the root directory of the data repository
 DATA_REPO_ROOT="$(realpath "$SCRIPT_DIR/../..")"
 
-# Print directory information for debugging
 echo "Current/Original directory: $ORIGINAL_DIR"
 echo "Script directory: $SCRIPT_DIR"
 echo "Data repository root: $DATA_REPO_ROOT"
 
-# Function to validate requirements before processing
 function validate_requirements {
-    # Check if Gemini CLI is installed
-    if ! command -v gemini &> /dev/null; then
-        echo "Error: Gemini CLI is not installed. Please install Gemini CLI before running this script."
-        exit 1
+    # Check for Sarvam API key
+    if [ -z "${SARVAM_API_KEY:-}" ]; then
+        # Allow --sarvam_api_key flag to pass it in too
+        if ! echo "$@" | grep -q "sarvam_api_key"; then
+            echo "Warning: SARVAM_API_KEY environment variable not set."
+            echo "Set it with: export SARVAM_API_KEY='your-api-key'"
+            echo "Or pass --sarvam_api_key=YOUR_KEY as an argument."
+        fi
     fi
 
-    # Inform user if the Sarvam proxy redirect is active
-    if [ -n "${GOOGLE_GEMINI_BASE_URL:-}" ]; then
-        echo "INFO: GOOGLE_GEMINI_BASE_URL=${GOOGLE_GEMINI_BASE_URL}"
-        echo "INFO: Gemini CLI requests will be routed via the LiteLLM proxy (Sarvam AI)."
+    # Check for openai Python package
+    if ! python3 -c "import openai" 2>/dev/null; then
+        echo "Error: openai Python package not installed."
+        echo "Install with: pip install openai"
+        exit 1
     fi
 }
 
-# Function to setup Python environment
-function setup_python_environment {    
+function setup_python_environment {
     cd "$DATA_REPO_ROOT"
-    
-    # Setup Python environment unless SKIP_PYTHON_SETUP is true
     if [ "${SKIP_PYTHON_SETUP:-}" != "true" ]; then
         echo "Setting up Python environment..."
         ./run_tests.sh -r
     else
         echo "Skipping Python environment setup (SKIP_PYTHON_SETUP=true)"
     fi
-    
-    # Activate the environment
     echo "Activating Python virtual environment..."
     source .venv/bin/activate
 }
 
-# Function to run the PV map generator
-function run_pvmap_generator {
-    # Ensure we're back in the original directory before running the generator
+function run_sarvam_pvmap_generator {
     cd "$ORIGINAL_DIR"
-    echo "Running PV Map generator from: $(pwd)"
-    python3 "$SCRIPT_DIR/pvmap_generator.py" "$@"
+    echo "Running Sarvam PV Map generator from: $(pwd)"
+    python3 "$SCRIPT_DIR/sarvam_pvmap_generator.py" "$@"
 }
 
-
-# Run validations before any processing
-validate_requirements
+validate_requirements "$@"
 setup_python_environment
 mkdir -p "$ORIGINAL_DIR/.datacommons"
-run_pvmap_generator "$@"
+run_sarvam_pvmap_generator "$@"
 echo "PV Map generation completed."

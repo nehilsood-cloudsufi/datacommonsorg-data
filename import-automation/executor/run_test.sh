@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-python3 -m venv .env
-. .env/bin/activate
+python3 -m venv .venv
+. .venv/bin/activate
 pip3 install --disable-pip-version-check -q -r requirements.txt
 
 python3 -m unittest discover -v -p "*_test.py"

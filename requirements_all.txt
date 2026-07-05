@@ -17,6 +17,8 @@ geopandas
 geopy
 google-generativeai
 jinja2
+openai
+litellm[proxy]
 matplotlib
 netCDF4
 protobuf

@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-python3 -m venv .env
-source .env/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip3 install -r ../../../requirements_all.txt -q
 pip3 install -r requirements.txt -q
 python3 country_boundaries.py

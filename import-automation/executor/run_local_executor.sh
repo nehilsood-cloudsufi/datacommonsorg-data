@@ -13,8 +13,8 @@
 # limitations under the License.
 
 cd $(dirname $0)
-python3 -m venv .env
-. .env/bin/activate
+python3 -m venv .venv
+. .venv/bin/activate
 pip3 install --disable-pip-version-check -q -r requirements.txt
 
 # Setup files to run import executor locally

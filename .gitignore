@@ -23,5 +23,6 @@ import-automation/executor/config_override.json
 .datacommons/
 
 .venv/
-
+.env
+ground_truth/
 
